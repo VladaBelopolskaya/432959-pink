@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Влада](https://up.htmlacademy.ru/adaptive/14/user/432959).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://htmlacademy.ru/profile/id23249).
 
 ---
 
