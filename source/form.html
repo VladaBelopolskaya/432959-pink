@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image" src="#" alt="logo">
+      <img class="page-header__logo-image" src="index.html" alt="logo">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Меню</button>
         <ul class="main-nav__list">
@@ -34,11 +34,11 @@
           <ul>
             <li>
               <label for="input-name">Фамилия:</label>
-              <input type="text" name="surname" placeholder="Укажите фамилию" id="input-name" required> <!-- Что делать со звездочкой в placeholder? -->
+              <input type="text" name="surname" placeholder="Укажите фамилию*" id="input-name" required>
             </li>
             <li>
               <label for="input-first-name">Имя:</label>
-              <input type="text" name="first-name" placeholder="Введите ваше имя" id="input-first-name" required>
+              <input type="text" name="first-name" placeholder="Введите ваше имя*" id="input-first-name" required>
             </li>
             <li>
               <label for="input-patronumic">Отчество:</label>
@@ -80,19 +80,22 @@
           <ul>
             <li>
               <label for="contact-telephone">Номер телефона</label>
-              <input type="number" name="telephone" id="contact-telephone" placeholder="Номер, пожалуйста">
+              <input type="tel" name="telephone" id="contact-telephone" placeholder="Номер, пожалуйста">
             </li>
             <li>
               <label for="contact-email">Адрес почты</label>
-              <input type="text" name="email" id="contact-email" placeholder="Введите почту">
+              <input type="email" name="email" id="contact-email" placeholder="Введите почту*">
             </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Операционная система</legend>
-          <input type="radio" name="os" value="iOS"> Pink для iOS <br>
-          <input type="radio" name="os" value="android"> Pink на Android <br>
-          <input type="radio" name="os" value="windows"> Windows Phone
+          <label for="iOS">Pink для iOS</label>
+          <input type="radio" name="os" value="iOS" id="iOS">
+          <label for="android">Pink на Android</label>
+          <input type="radio" name="os" value="android" id="android">
+          <label for="windows">Windows Phone</label>
+          <input type="radio" name="os" value="windows" id="windows">
         </fieldset>
         <fieldset>
           <legend>Отзыв</legend>
@@ -100,10 +103,11 @@
           <textarea id="comment" name="comment"></textarea>
         </fieldset>
         <button type="submit">Отправить форму</button>
+        <p>* - обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
-      <img class="page-footer__logo" src="#" alt="logo">
+      <img class="page-footer__logo" src="index.html" alt="logo">
       <ul class="page-footer__social">
         <li class="page-footer__social__item">
           <a href="#"></a>
