@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <img class="page-header__logo-image" src="index.html" alt="logo">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="page-main__text">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Данные</legend>
+          <ul>
+            <li>
+              <label for="input-name">Фамилия:</label>
+              <input type="text" name="surname" placeholder="Укажите фамилию*" id="input-name" required>
+            </li>
+            <li>
+              <label for="input-first-name">Имя:</label>
+              <input type="text" name="first-name" placeholder="Введите ваше имя*" id="input-first-name" required>
+            </li>
+            <li>
+              <label for="input-patronumic">Отчество:</label>
+              <input type="text" name="patronumic" placeholder="Ну и отчество так же" id="input-patronumic" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <ul>
+            <li>
+              <label for="achievement-shark">Сделал селфи с акулой</label>
+              <input type="checkbox" name="shark" id="achievement-shark" checked>
+            </li>
+            <li>
+              <label for="achievement-beach">Обгорел на пляже</label>
+              <input type="checkbox" name="beach" id="achievement-beach" checked>
+            </li>
+            <li>
+              <label for="achievement-norris">Видел Чака Норриса</label>
+              <input type="checkbox" name="norris" id="achievement-norris">
+            </li>
+            <li>
+              <label for="achievement-souvenirs">Накупил сувениров</label>
+              <input type="checkbox" name="souvenirs" id="achievement-souvenirs">
+            </li>
+            <li>
+              <label for="achievement-castle">Удержал башню</label>
+              <input type="checkbox" name="castle" id="achievement-castle" checked>
+            </li>
+            <li>
+              <label for="achievement-hotel">Разгромил отель</label>
+              <input type="checkbox" name="hotel" id="achievement-hotel">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Контакты</legend>
+          <ul>
+            <li>
+              <label for="contact-telephone">Номер телефона</label>
+              <input type="tel" name="telephone" id="contact-telephone" placeholder="Номер, пожалуйста">
+            </li>
+            <li>
+              <label for="contact-email">Адрес почты</label>
+              <input type="email" name="email" id="contact-email" placeholder="Введите почту*">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Операционная система</legend>
+          <label for="iOS">Pink для iOS</label>
+          <input type="radio" name="os" value="iOS" id="iOS">
+          <label for="android">Pink на Android</label>
+          <input type="radio" name="os" value="android" id="android">
+          <label for="windows">Windows Phone</label>
+          <input type="radio" name="os" value="windows" id="windows">
+        </fieldset>
+        <fieldset>
+          <legend>Отзыв</legend>
+          <label for="comment">Опишите сови эмоции</label>
+          <textarea id="comment" name="comment"></textarea>
+        </fieldset>
+        <button type="submit">Отправить форму</button>
+        <p>* - обязательные поля</p>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <img class="page-footer__logo" src="index.html" alt="logo">
+      <ul class="page-footer__social">
+        <li class="page-footer__social__item">
+          <a href="#"></a>
+        </li>
+        <li class="page-footer__social__item">
+          <a href="#"></a>
+        </li>
+        <li class="page-footer__social__item">
+          <a href="#"></a>
+        </li>
+      </ul>
+      <p class="page-footer__text">Разработано:</p>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </footer>
+  </body>
+</html>
