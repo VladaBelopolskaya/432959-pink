@@ -1,0 +1,28 @@
+.popup-complete {
+  line-height: 24px;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  margin-top: 45px;
+  &--color-white {
+    background-color: #ffffff;
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+  &--color-gray {
+    background-color: #f2f2f2;
+    padding: 48px 20px;
+  }
+
+}
+
+.popup-complete__title {
+  margin: 0;
+  padding: 0;
+}
+
+.popup-complete__text {
+  margin: 0;
+  padding: 0;
+  padding: 35px 0;
+}
