@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -50,36 +49,37 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="achievement">
-        <legend class="achievement-legend">Ваши безбашенные достижения в путешествии</legend>
-        <!-- Это надо сделать не легендой? Что бы цвет фона был нормальным, а не пополам -->
-        <ul class="achievement-list">
-          <li>
-            <label for="achievement-shark" class="achievement-item">Сделал селфи с акулой</label>
-            <input type="checkbox" name="shark" id="achievement-shark" checked>
-          </li>
-          <li>
-            <label for="achievement-beach" class="achievement-item">Обгорел на пляже</label>
-            <input type="checkbox" name="beach" id="achievement-beach" checked>
-          </li>
-          <li>
-            <label for="achievement-norris" class="achievement-item">Видел Чака Норриса</label>
-            <input type="checkbox" name="norris" id="achievement-norris">
-          </li>
-          <li>
-            <label for="achievement-souvenirs" class="achievement-item">Накупил сувениров</label>
-            <input type="checkbox" name="souvenirs" id="achievement-souvenirs">
-          </li>
-          <li>
-            <label for="achievement-castle" class="achievement-item">Удержал башню</label>
-            <input type="checkbox" name="castle" id="achievement-castle" checked>
-          </li>
-          <li>
-            <label for="achievement-hotel" class="achievement-item">Разгромил отель</label>
-            <input type="checkbox" name="hotel" id="achievement-hotel">
-          </li>
-        </ul>
-      </fieldset>
+      <div class="achievement-help">
+        <fieldset class="achievement">
+          <legend class="achievement-legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="achievement-list">
+            <li>
+              <label for="achievement-shark" class="achievement-item">Сделал селфи с акулой</label>
+              <input type="checkbox" name="shark" id="achievement-shark" checked>
+            </li>
+            <li>
+              <label for="achievement-beach" class="achievement-item">Обгорел на пляже</label>
+              <input type="checkbox" name="beach" id="achievement-beach" checked>
+            </li>
+            <li>
+              <label for="achievement-norris" class="achievement-item">Видел Чака Норриса</label>
+              <input type="checkbox" name="norris" id="achievement-norris">
+            </li>
+            <li>
+              <label for="achievement-souvenirs" class="achievement-item">Накупил сувениров</label>
+              <input type="checkbox" name="souvenirs" id="achievement-souvenirs">
+            </li>
+            <li>
+              <label for="achievement-castle" class="achievement-item">Удержал башню</label>
+              <input type="checkbox" name="castle" id="achievement-castle" checked>
+            </li>
+            <li>
+              <label for="achievement-hotel" class="achievement-item">Разгромил отель</label>
+              <input type="checkbox" name="hotel" id="achievement-hotel">
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="contact">
         <legend class="visually-hidden">Контакты</legend>
         <ul class="contact__list">
@@ -93,23 +93,25 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="platform">
-        <legend class="platform-legend">С каким приложением путешествовали?</legend>
-        <ul class="platform-list">
-          <li>
-            <label for="iOS" class="platform-item">Pink для iOS</label>
-            <input type="radio" name="os" value="iOS" id="iOS" checked>
-          </li>
-          <li>
-            <label for="android" class="platform-item">Pink на Android</label>
-            <input type="radio" name="os" value="android" id="android">
-          </li>
-          <li>
-            <label for="windows" class="platform-item">Windows Phone</label>
-            <input type="radio" name="os" value="windows" id="windows">
-          </li>
-        </ul>
-      </fieldset>
+      <div class="platform-help">
+        <fieldset class="platform">
+          <legend class="platform-legend">С каким приложением путешествовали?</legend>
+          <ul class="platform-list">
+            <li>
+              <label for="iOS" class="platform-item">Pink для iOS</label>
+              <input type="radio" name="os" value="iOS" id="iOS" checked>
+            </li>
+            <li>
+              <label for="android" class="platform-item">Pink на Android</label>
+              <input type="radio" name="os" value="android" id="android">
+            </li>
+            <li>
+              <label for="windows" class="platform-item">Windows Phone</label>
+              <input type="radio" name="os" value="windows" id="windows">
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="feedback">
         <legend class="visually-hidden">Отзыв</legend>
         <label for="comment" class="feedback__label">Опишите сови эмоции</label>

@@ -1,39 +1,18 @@
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: 'Open Sans', 'Arial', sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@import "page-header.scss";
-@import "download.scss";
-@import "advantages.scss";
-@import "reviews.scss";
-@import "price.scss";
-@import "page-footer.scss";
-@import "page-main.scss";
-@import "post.scss";
-@import "page-footer-index.scss";
-@import "name.scss";
-@import "achievement.scss";
-@import "contact.scss";
-@import "platform.scss";
-@import "feedback.scss";
-@import "popup-error.scss";
-@import "popup-complete.scss";
+@import "blocks/global.scss";
+@import "blocks/page-header.scss";
+@import "blocks/download.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-main.scss";
+@import "blocks/post.scss";
+@import "blocks/page-footer-index.scss";
+@import "blocks/name.scss";
+@import "blocks/achievement.scss";
+@import "blocks/contact.scss";
+@import "blocks/platform.scss";
+@import "blocks/feedback.scss";
+@import "blocks/popup-error.scss";
+@import "blocks/popup-complete.scss";
+@import "blocks/main-nav.scss";

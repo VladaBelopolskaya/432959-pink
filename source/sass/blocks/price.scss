@@ -14,10 +14,11 @@
   line-height: 30px;
   font-weight: 300;
   padding: 24px 90px;
-  &--bold {
-    font-size: 18px;
-    font-weight: 700;
-  }
+}
+
+.price__tariff {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .price__line {

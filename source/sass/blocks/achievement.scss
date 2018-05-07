@@ -1,4 +1,9 @@
-.platform {
+.achievement-help {
+  background-color: #f2f2f2;
+  padding-top: 58px;
+}
+
+.achievement {
   background-color: #f2f2f2;
   border: none;
   margin: 0;
@@ -8,20 +13,20 @@
   padding-bottom: 42px;
 }
 
-.platform-legend {
+.achievement-legend {
   color: #d22856;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.platform-list {
+.achievement-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.platform-item {
+.achievement-item {
   font-size: 18px;
   line-height: 30px;
 }
