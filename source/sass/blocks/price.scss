@@ -1,0 +1,38 @@
+.price {
+  background-color: #f2f2f2;
+  padding-top: 66px;
+}
+
+.price__list {
+  text-transform: uppercase;
+}
+
+.price__name {
+  background-color: #283645;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 24px 90px;
+}
+
+.price__tariff {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.price__line {
+  background-color: #ffffff;
+}
+
+.price__field {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.price__button {
+  padding-bottom: 46px;
+  padding-top: 38px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
