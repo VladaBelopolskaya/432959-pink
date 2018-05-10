@@ -1,4 +1,38 @@
 .page-footer {
   background-color: #ffffff;
   padding: 38px 68px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media (min-width: 660px) {
+    padding-left: 20px;
+    padding-right: 20px; // Почему не срабатывает?
+  }
+}
+
+.page-footer__help {
+  display: flex;
+}
+
+.page-footer__logo {
+  width: 150px;
+  height: 40px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer__social {
+  list-style: none;
+  margin: auto;
+  margin-bottom: 35px;
+  padding: 0;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__link {
+  width: 35px;
+  height: 40px;
 }

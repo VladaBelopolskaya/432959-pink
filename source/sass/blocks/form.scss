@@ -1,0 +1,15 @@
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: 660px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 0;
+  }
+}
