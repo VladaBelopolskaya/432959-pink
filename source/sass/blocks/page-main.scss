@@ -36,13 +36,29 @@
   line-height: 30px;
   margin: 0 auto;
   text-align: center;
+  width: 280px;
+  @media (min-width: 660px) {
+    width: 440px;
+  }
+  @media (min-width: 960px) {
+    width: 580px;
+  }
 
   &--first {
     padding: 56px 38px;
   }
 
   &--second {
-    padding: 50px 30px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+  }
+  &--third {
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
   }
 
   &--form-up {
@@ -75,4 +91,3 @@
     }
   }
 }
-

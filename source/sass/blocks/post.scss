@@ -2,23 +2,25 @@
   background-color: #f2f2f2;
   font-size: 14px;
   line-height: 16px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   margin-bottom: 20px;
-  min-width: 280px;
+  width: 280px;
   @media (min-width: 660px) {
     width: 300px;
     min-height: 455px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  @media (min-width: 660px) {
+  @media (min-width: 960px) {
     min-height: 555px;
   }
   &--day {
     @media (min-width: 660px) {
       width: 620px;
     }
-    @media (min-width: 660px) {
+    @media (min-width: 960px) {
       width: 940px;
     }
   }
@@ -26,12 +28,11 @@
 
 .post__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @media (min-width: 960px) {
-    width: 940px;
-    margin-left: 130px;
-    margin-right: 130px;
+  flex-direction: column;
+  @media (min-width: 660px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

@@ -10,9 +10,11 @@
 
 <body>
   <header class="page-header">
-    <img class="page-header__logo-image" src="index.html" alt="logo">
+    <div class="page-header__help">
+      <img class="page-header__logo-image" src="index.html" alt="logo">
+      <button class="page-header__button" type="button">Меню</button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__button" type="button">Меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a href="index.html">Главная</a>
@@ -131,12 +133,23 @@
       </section>
     </div>
     <div class="page-main__help-text">
-      <p class="page-main__text page-main__text--second">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="page-main__text page-main__text--second">
+        Затмите их всех!
+      </p>
+      <p class="page-main__text page-main__text--third">
+        Выкладывайте все, что накопилось в телефоне!
+      </p>
     </div>
     <section>
-      <form action="">
-        <button type="submit">Запостить</button>
-        <button type="reset">Отмена</button>
+      <form action="" class="your-post">
+        <div class="your-post__photo">
+          <p>Тут будет картинка</p>
+        </div>
+        <div class="your-post__button">
+         <p>Тут будут ползунки</p>
+          <button type="submit">Запостить</button>
+          <button type="reset">Отмена</button>
+        </div>
       </form>
     </section>
   </main>
