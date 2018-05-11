@@ -5,6 +5,10 @@
   padding: 0;
   margin-top: 40px;
   margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+
+  align-self: center;
   @media (min-width: 660px) {
     border: 1px solid #e5e5e5;
     order: 5;
@@ -26,15 +30,15 @@
 .feedback__area {
   font-size: 18px;
   padding: 20px;
-  width: 278px;
+  width: 238px;
   @media (min-width: 660px) {
     width: 458px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 50px;
   }
-  @media (min-width: 1200px) {
-    width: 828px;
+  @media (min-width: 960px) {
+    width: 778px;
     margin-bottom: 45px;
   }
 }

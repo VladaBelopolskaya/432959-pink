@@ -35,9 +35,7 @@
     <div class="page-main__help-title">
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
-    <div class="page-main__help-text">
-      <p class="page-main__text page-main__text--form-up">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-    </div>
+    <p class="page-main__text page-main__text--form-up">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту! <span class="page-main__text--invisible">Пожалуйста, заполните форму ниже:</span></p>
     <form action="https://echo.htmlacademy.ru" method="post" class="information">
       <fieldset class="name">
         <legend class="visually-hidden">Данные</legend>
@@ -123,11 +121,12 @@
         <legend class="feedback__legend"><label for="comment">Опишите свои эмоции</label></legend>
         <textarea id="comment" name="comment" rows="7" class="feedback__area">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
+      <div class="information__down">
+        <button type="submit" class="button button--form">Отправить форму</button>
+          <p class="information__text"><span class="information__text--red">*</span> — обязательные поля</p>
+      </div>
     </form>
-    <button type="submit" class="button">Отправить форму</button>
-    <div class="page-main__help-text">
-      <p class="page-main__text page-main__text--form-down">* - обязательные поля</p>
-    </div>
+
   </main>
   <footer class="page-footer">
     <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="logo">
@@ -150,7 +149,9 @@
   <article class="popup-error">
     <h1 class="popup-error__title">Что-то пошло не так!</h1>
     <p class="popup-error__text">Проверь поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <div class="popup-error--color-gray">
     <button class="button">OK</button>
+    </div>
   </article>
   <article class="popup-complete">
     <div class="popup-complete--color-white">

@@ -5,13 +5,15 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 15px;
+  align-self: center;
   @media (min-width: 660px) {
     order: 1;
-  margin-left: 0;
-  margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     padding-top: 15px;
+    margin-right: 50px;
   }
 }
 
@@ -20,6 +22,10 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 25px;
+  flex-direction: column;
+  @media (min-width: 660px) {
+    flex-direction: row;
+  }
 }
 
 .name__list {
@@ -35,8 +41,10 @@
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 20px;
+  align-self: flex-start;
   @media (min-width: 660px) {
     padding-left: 0;
+    align-self: center;
   }
 }
 
@@ -51,7 +59,7 @@
   @media (min-width: 660px) {
     width: 495px;
   }
-  @media (min-width: 1200px) {
-    width: 340px;
+  @media (min-width: 960px) {
+    width: 315px;
   }
 }

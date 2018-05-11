@@ -1,14 +1,15 @@
 .achievement-help {
   background-color: #f2f2f2;
-  padding-top: 55px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 40px;
+  align-self: center;
   @media (min-width: 660px) {
     background-color: #ffffff;
     padding: 0;
     order: 4;
   }
-
+  @media (min-width: 660px) {
+    width: 940px;
+  }
 }
 
 .achievement {
@@ -23,10 +24,14 @@
     border: 1px solid #e5e5e5;
     width: 546px;
     padding-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
-  @media (min-width: 1200px) {
-    width: 920px;
+  @media (min-width: 960px) {
+    width: 820px;
     margin: 0;
+    padding-right: 60px;
   }
 }
 

@@ -4,16 +4,27 @@
   font-size: 14px;
   margin: 0;
   padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-top: 45px;
   margin-bottom: 50px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 660px) {
+    width: 460px;
+  }
+  @media (min-width: 960px) {
+    width: 780px;
+  }
+  &--color-gray {
+    @media (min-width: 960px) {
+      background-color: #f2f2f2;
+      padding: 48px 20px;
+    }
+  }
 }
 
-//Не понимаю почему текст съезжает
-
 .popup-error__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 280px;
   line-height: 24px;
@@ -22,7 +33,7 @@
 }
 
 .popup-error__text {
-  margin: 0;
+  margin: 0 auto;
   padding: 38px 0;
   width: 280px;
   line-height: 24px;

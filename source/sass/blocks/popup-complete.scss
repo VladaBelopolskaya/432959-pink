@@ -4,11 +4,24 @@
   margin: 0;
   padding: 0;
   margin-top: 45px;
+  width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  align-self: center;
+
+  @media (min-width: 660px) {
+    width: 460px;
+  }
+  @media (min-width: 960px) {
+    width: 780px;
+  }
 
   &--color-white {
     background-color: #ffffff;
-    margin-left: 27px;
-    margin-right: 27px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   &--color-gray {
@@ -18,11 +31,19 @@
 }
 
 .popup-complete__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 280px;
+  line-height: 24px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .popup-complete__text {
-  margin: 0;
+  margin: 0 auto;
   padding: 35px 0;
+  width: 280px;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
 }
