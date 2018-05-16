@@ -3,24 +3,27 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <img class="page-header__logo-image" src="index.html" alt="logo">
+    <div class="page-header__help">
+      <img class="page-header__logo-image" src="index.html" alt="logo">
+      <button class="page-header__button" type="button">Меню</button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__button" type="button">Меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">Конкурс</a>
+          <a href="#">Конкурс</a>
         </li>
         <li class="main-nav__item">
           <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
@@ -29,76 +32,78 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    <p class="page-main__text page-main__text--form">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-    <form action="https://echo.htmlacademy.ru" method="post" class="form">
+    <div class="page-main__help-title">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+    <p class="page-main__text page-main__text--form-up">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту! <span class="page-main__text--invisible">Пожалуйста, заполните форму ниже:</span></p>
+    <form action="https://echo.htmlacademy.ru" method="post" class="information">
       <fieldset class="name">
         <legend class="visually-hidden">Данные</legend>
         <ul class="name__list">
-          <li>
+          <li class="name__item">
             <label for="input-name" class="name__label">Фамилия:</label>
-            <input type="text" name="surname" placeholder="Укажите фамилию*" id="input-name" required>
+            <input type="text" class="name__input name__input--surname" name="surname" placeholder="Укажите фамилию*" id="input-name" required>
           </li>
-          <li>
+          <li class="name__item">
             <label for="input-first-name" class="name__label">Имя:</label>
-            <input type="text" name="first-name" placeholder="Введите ваше имя*" id="input-first-name" required>
+            <input type="text" class="name__input name__input--first-name" name="first-name" placeholder="Введите ваше имя*" id="input-first-name" required>
           </li>
-          <li>
+          <li class="name__item">
             <label for="input-patronumic" class="name__label">Отчество:</label>
-            <input type="text" name="patronumic" placeholder="Ну и отчество так же" id="input-patronumic" required>
+            <input type="text" class="name__input name__input--patronumic" name="patronumic" placeholder="Ну и отчество так же" id="input-patronumic" required>
           </li>
         </ul>
       </fieldset>
-      <div class="achievement-help">
+      <div class="information__achievement">
         <fieldset class="achievement">
-          <legend class="achievement-legend">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="achievement-list">
+          <legend class="achievement__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="achievement__list">
             <li>
-              <label for="achievement-shark" class="achievement-item">Сделал селфи с акулой</label>
+              <label for="achievement-shark" class="achievement__item">Сделал селфи с акулой</label>
               <input type="checkbox" name="shark" id="achievement-shark" checked>
             </li>
             <li>
-              <label for="achievement-beach" class="achievement-item">Обгорел на пляже</label>
+              <label for="achievement-beach" class="achievement__item">Обгорел на пляже</label>
               <input type="checkbox" name="beach" id="achievement-beach" checked>
             </li>
             <li>
-              <label for="achievement-norris" class="achievement-item">Видел Чака Норриса</label>
+              <label for="achievement-norris" class="achievement__item">Видел Чака Норриса</label>
               <input type="checkbox" name="norris" id="achievement-norris">
             </li>
             <li>
-              <label for="achievement-souvenirs" class="achievement-item">Накупил сувениров</label>
+              <label for="achievement-souvenirs" class="achievement__item">Накупил сувениров</label>
               <input type="checkbox" name="souvenirs" id="achievement-souvenirs">
             </li>
             <li>
-              <label for="achievement-castle" class="achievement-item">Удержал башню</label>
+              <label for="achievement-castle" class="achievement__item">Удержал башню</label>
               <input type="checkbox" name="castle" id="achievement-castle" checked>
             </li>
             <li>
-              <label for="achievement-hotel" class="achievement-item">Разгромил отель</label>
+              <label for="achievement-hotel" class="achievement__item">Разгромил отель</label>
               <input type="checkbox" name="hotel" id="achievement-hotel">
             </li>
           </ul>
         </fieldset>
       </div>
       <fieldset class="contact">
-        <legend class="visually-hidden">Контакты</legend>
+        <legend class="contact__legend">Контактная информация</legend>
         <ul class="contact__list">
-          <li>
+          <li class="contact__item">
             <label for="contact-telephone" class="contact__label">Номер телефона</label>
-            <input type="tel" name="telephone" id="contact-telephone" placeholder="Номер, пожалуйста">
+            <input type="tel" class="contact__input" name="telephone" id="contact-telephone" placeholder="Номер, пожалуйста">
           </li>
-          <li>
+          <li class="contact__item">
             <label for="contact-email" class="contact__label">Адрес почты</label>
-            <input type="email" name="email" id="contact-email" placeholder="Введите почту*">
+            <input type="email" class="contact__input" name="email" id="contact-email" placeholder="Введите почту*">
           </li>
         </ul>
       </fieldset>
-      <div class="platform-help">
+      <div class="information__platform">
         <fieldset class="platform">
-          <legend class="platform-legend">С каким приложением путешествовали?</legend>
-          <ul class="platform-list">
+          <legend class="platform__legend">С каким приложением путешествовали?</legend>
+          <ul class="platform__list">
             <li>
-              <label for="iOS" class="platform-item">Pink для iOS</label>
+              <label for="iOS" class="platform__item">Pink для iOS</label>
               <input type="radio" name="os" value="iOS" id="iOS" checked>
             </li>
             <li>
@@ -113,42 +118,48 @@
         </fieldset>
       </div>
       <fieldset class="feedback">
-        <legend class="visually-hidden">Отзыв</legend>
-        <label for="comment" class="feedback__label">Опишите сови эмоции</label>
-        <textarea id="comment" name="comment" rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <legend class="feedback__legend"><label for="comment">Опишите свои эмоции</label></legend>
+        <textarea id="comment" name="comment" rows="7" class="feedback__area">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
-      <button type="submit">Отправить форму</button>
-      <p>* - обязательные поля</p>
+      <div class="information__down">
+        <button type="submit" class="button button--form">Отправить форму</button>
+        <p class="information__text"><span class="information__text--red">*</span> — обязательные поля</p>
+      </div>
     </form>
+
   </main>
   <footer class="page-footer">
-    <img class="page-footer__logo" src="index.html" alt="logo">
+    <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="logo">
     <ul class="page-footer__social">
       <li class="page-footer__social__item">
-        <a href="#"></a>
+        <a href="#"><img src="img/icon-twitter.svg"></a>
       </li>
       <li class="page-footer__social__item">
-        <a href="#"></a>
+        <a href="#"><img src="img/icon-facebook.svg"></a>
       </li>
       <li class="page-footer__social__item">
-        <a href="#"></a>
+        <a href="#"><img src="img/icon-youtube.svg"></a>
       </li>
     </ul>
-    <p class="page-footer__text">Разработано:</p>
-    <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__help">
+      <p class="page-footer__text">Разработано:</p>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="html academy"></a>
+    </div>
   </footer>
   <article class="popup-error">
     <h1 class="popup-error__title">Что-то пошло не так!</h1>
     <p class="popup-error__text">Проверь поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="popup-error__button">OK</button>
+    <div class="popup-error__button popup-error__button-gray">
+      <button class="button">OK</button>
+    </div>
   </article>
   <article class="popup-complete">
-    <div class="popup-complete--color-white">
+    <div class="popup-error__container popup-error__container-white">
       <h1 class="popup-complete__title">Ваша заявка отправлена</h1>
       <p class="popup-complete__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
     </div>
-    <div class="popup-complete--color-gray">
-      <button class="popup-complete__button">Закрыть окно</button>
+    <div class="popup-error__button popup-error__button-gray">
+      <button class="button">Закрыть окно</button>
     </div>
   </article>
 </body>

@@ -2,34 +2,92 @@
   background-color: #ffffff;
 }
 
-.page-main__title {
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 200;
-  color: #ffffff;
+.page-main__help-title {
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  margin: 0;
-  padding-bottom: 86px;
-  padding-left: 75px;
-  padding-right: 75px;
+}
+
+.page-main__title {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  width: 230px;
   padding-top: 34px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  @media (min-width: 660px) {
+    font-size: 50px;
+    line-height: 60px;
+    width: 480px;
+  }
+  @media (min-width: 960px) {
+    font-size: 50px;
+    line-height: 60px;
+    width: 750px;
+  }
 }
 
 .page-main__text {
   font-size: 14px;
   line-height: 30px;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 280px;
+  @media (min-width: 660px) {
+    width: 440px;
+  }
+  @media (min-width: 960px) {
+    width: 580px;
+  }
 
   &--first {
     padding: 56px 38px;
   }
 
   &--second {
-    padding: 50px 30px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+  }
+  &--third {
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
   }
 
-  &--form {
+  &--form-up {
     padding: 52px 20px;
+    width: 280px;
+    text-align: center;
+    @media (min-width: 660px) {
+      font-size: 18px;
+      width: 490px;
+      padding-bottom: 0;
+    }
+    @media (min-width: 960px) {
+      width: 760px;
+      padding-top: 95px;
+      padding-bottom: 70px;
+    }
+  }
+  &--invisible {
+    display: none;
+    @media (min-width: 660px) {
+      display: block;
+      font-size: 18px;
+      width: 490px;
+      padding-top: 0;
+      padding-bottom: 52px;
+      text-align: center;
+    }
+    @media (min-width: 960px) {
+      display: inline;
+    }
   }
 }

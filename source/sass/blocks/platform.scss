@@ -1,32 +1,45 @@
-.platform-help {
-  background-color: #f2f2f2;
-  padding-top: 58px;
-}
-
 .platform {
   background-color: #f2f2f2;
   border: none;
-  margin: 0;
-  padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-bottom: 42px;
+  width: 254px;
+  @media (min-width: 660px) {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    width: 534px;
+    padding-left: 60px;
+  }
+  @media (min-width: 960px) {
+    padding-left: 70px;
+    width: 305px;
+    margin: 0;
+  }
 }
 
-.platform-legend {
+.platform__legend {
   color: #d22856;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
+  width: 180px;
+  padding-bottom: 35px;
+  @media (min-width: 660px) {
+    line-height: 30px;
+    width: 368px;
+    padding: 0;
+  }
 }
 
-.platform-list {
+.platform__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.platform-item {
+.platform__item {
   font-size: 18px;
   line-height: 30px;
 }

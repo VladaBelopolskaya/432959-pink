@@ -3,76 +3,137 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <img class="page-header__logo-image" src="#" alt="logo">
-    <nav class="main-nav">
-      <button class="main-nav__button" type="button">Меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__help-index">
+      <img class="page-header__logo-image" src="#" alt="pink">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="download">
+      <p class="download__title">Взгляните на жизнь иначе!</p>
+      <a class="download__button" href="https://www.apple.com/itunes/">Скачать приложение</a>
+      <div class="download__platform">
+        <a class="download__img download__img--ios" href="https://www.apple.com/itunes/">iOS</a>
+        <a class="download__img download__img--android" href="https://play.google.com/store">Android</a>
+        <a class="download__img download__img--windows" href="https://www.microsoft.com/ru-ru/store/apps?rtc=1">Windows</a>
+      </div>
+      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
-    <section class="download">
-      <a class="download__button" href="https://www.apple.com/itunes/">Скачать приложение</a>
-      <a class="download__img download__img--ios" href="https://www.apple.com/itunes/">iOS</a>
-      <a class="download__img download__img--android" href="https://play.google.com/store">Android</a>
-      <a class="download__img download__img--windows" href="https://www.microsoft.com/ru-ru/store/apps?rtc=1">Windows</a>
-      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
     <section class="advantages">
       <h2 class="visually-hidden">Приемущества</h2>
       <p class="advantages__text advantages__text--first">Устали от серости мегаполиса?</p>
       <p class="advantages__text advantages__text--second">Нам есть, что вам предложить!</p>
-      <h3 class="advantages__title advantages__title--first">Поднимает настроение</h3>
-      <p class="advantages__description">Приложение позволит победить вам осеннюю хандру и дипрессию буквально в несколько кликов!</p>
-      <h3 class="advantages__title">Меняет мир вокруг</h3>
-      <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      <h3 class="advantages__title">Заводит новых друзей</h3>
-      <p class="advantages__description advantages__description--last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      <div class="advantages__help">
+        <div class="advantages__part">
+          <h3 class="advantages__title advantages__title--first">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит победить вам осеннюю хандру и дипрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="advantages__part">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="advantages__part advantages__part--3">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description advantages__description--last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+    </section>
+    <section class="effect">
+      <div class="effect__help">
+        <h2 class="effect__title">Эффект на 24 часа!</h2>
+        <p>Британские ученые провели исследования и доказали, что положительный эффект от приложения длится целые сутки!</p>
+        <a>Узнать больше об исследовании</a>
+      </div>
     </section>
     <section class="reviews">
-      <cite class="reviews__title">Николай Петров</cite>
-      <q class="reviews__description">Это приложение перевернуло мой мир и позволило по новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии</q>
-      <button class="reviews__button" type="button">1</button>
-      <button class="reviews__button" type="button">2</button>
-      <button class="reviews__button" type="button">3</button>
+      <cite class="reviews__title">Николай Петров<span class="reviews__notice">25 лет, водитель трамвая</span></cite>
+
+      <q class="reviews__description">Это приложение перевернуло мой мир и позволило по новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+      <div class="reviews__button">
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+      </div>
     </section>
     <section class="price">
       <table class="price__list">
         <tr>
+          <th class="price__name price__name--empty">
+          </th>
+          <th class="price__name">
+            <span class="price__tariff">База</span> 1,99 usd
+          </th>
           <th class="price__name">
             <span class="price__tariff">Стандарт</span> 3,99 usd
           </th>
+          <th class="price__name">
+            <span class="price__tariff">Анлим</span> 9,99 usd
+          </th>
         </tr>
         <tr class="price__line">
-          <td class="price__field">Розовый фильтр</td>
-          <td class="price__available"></td>
+          <td class="price__field">
+            Розовый фильтр
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Розовый фильтр</span>
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Розовый фильтр</span>
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Розовый фильтр</span>
+          </td>
         </tr>
         <tr class="price__line">
-          <td class="price__field">Смайлики</td>
-          <td class="price__available"></td>
+          <td class="price__field">
+            Смайлики
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Смайлики</span>
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Смайлики</span>
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Смайлики</span>
+          </td>
         </tr>
         <tr class="price__line">
-          <td class="price__field">Комментарии</td>
-          <td class="price__available"></td>
+          <td class="price__field">
+            Комментарии
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Комментарии</span>
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Комментарии</span>
+          </td>
+          <td class="price__available">
+            <span class="price__comment">Комментарии</span>
+          </td>
         </tr>
       </table>
       <div class="price__button">
@@ -81,16 +142,42 @@
         <button type="button">3</button>
       </div>
     </section>
+    <section class="connection">
+      <p class="connection__text">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="connection__contacts">
+        <div class="connection__box connection__box--telephone">
+          <p class="connection__contact-title">Звоните:</p>
+          <p class="connection__contact-info">+7(812)555-66-66</p>
+        </div>
+        <div class="connection__box connection__box--mail">
+          <p class="connection__contact-title">Пишите:</p>
+          <p class="connection__contact-info">mail@htmlacademy.ru</p>
+        </div>
+        <div class="connection__box connection__box--adress">
+          <p class="connection__contact-title">Приезжайте в гости:</p>
+          <p class="connection__contact-info">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+      <img src="#" alt="map">
+    </section>
   </main>
-  <footer class="page-footer-index">
-    <p class="page-footer-index__text">Остались вопросы? Свяжитесь с нами</p>
-    <p class="page-footer-index__contact-title">Звоните:</p>
-    <p class="page-footer-index__contact-info">+7(812)555-66-66</p>
-    <p class="page-footer-index__contact-title">Пишите:</p>
-    <p class="page-footer-index__contact-info">mail@htmlacademy.ru</p>
-    <p class="page-footer-index__contact-title">Приезжайте в гости:</p>
-    <p class="page-footer-index__contact-info">ул. Большая Конюшенная, 19/8</p>
-    <img src="#" alt="map">
+  <footer class="page-footer page-footer__index">
+    <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="logo">
+    <ul class="page-footer__social">
+      <li class="page-footer__social__item">
+        <a href="#"><img src="img/icon-twitter.svg"></a>
+      </li>
+      <li class="page-footer__social__item">
+        <a href="#"><img src="img/icon-facebook.svg"></a>
+      </li>
+      <li class="page-footer__social__item">
+        <a href="#"><img src="img/icon-youtube.svg"></a>
+      </li>
+    </ul>
+    <div class="page-footer__help">
+      <p class="page-footer__text">Разработано:</p>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="html academy"></a>
+    </div>
   </footer>
 </body>
 
