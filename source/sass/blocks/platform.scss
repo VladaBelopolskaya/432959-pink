@@ -1,17 +1,3 @@
-.platform-help {
-  background-color: #f2f2f2;
-  padding-top: 58px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  align-self: center;
-  @media (min-width: 660px) {
-    background-color: #ffffff;
-    padding: 0;
-    order: 2;
-  }
-}
-
 .platform {
   background-color: #f2f2f2;
   border: none;
@@ -32,7 +18,7 @@
   }
 }
 
-.platform-legend {
+.platform__legend {
   color: #d22856;
   font-size: 14px;
   line-height: 18px;
@@ -47,13 +33,13 @@
   }
 }
 
-.platform-list {
+.platform__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.platform-item {
+.platform__item {
   font-size: 18px;
   line-height: 30px;
 }

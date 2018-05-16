@@ -5,27 +5,54 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 28px;
+  @media (min-width: 660px) {
+    position: absolute;
+    content: " ";
+    background-color: rgba(0,0,0,0);
+    bottom: 110px;
+
+  }
 }
 
-//Не понимаю почему не добавляется
-
-.download::before {
-  content: " ";
-  background: url("../img/bg-back-mobile@1x.jpg");
-  height: 400px;
-  width: 320px;
+.download__title {
+  display: none;
+  @media (min-width: 660px) {
+    display: inline-block;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 300;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .download__button {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+  width: 280px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.download__platform {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//не помещается, хотя все цифры по макету
 .download__text {
+  width: 235px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .download__img {

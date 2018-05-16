@@ -1,5 +1,21 @@
 .advantages {
   color: #000000;
+  background-color: #f2f2f2;
+}
+
+.advantages__help {
+  @media (min-width: 660px) {
+    width: 620px;
+    padding: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 960px) {
+    display: flex;
+    width: 940px;
+    padding-top: 255px;
+  }
 }
 
 .advantages__text {
@@ -49,6 +65,7 @@
   line-height: 36px;
   font-weight: 700;
   background-color: #f2f2f2;
+  text-align: center;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
@@ -66,6 +83,7 @@
   line-height: 36px;
   font-weight: 400;
   background-color: #f2f2f2;
+  text-align: center;
   margin: 0;
   padding: 0;
   padding-left: 30px;
@@ -73,5 +91,44 @@
 
   &--last {
     padding-bottom: 322px;
+    @media (min-width: 660px) {
+      padding-bottom: 44px;
+    }
+
+  }
+}
+
+.advantages__part {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 660px) {
+    padding-left: 310px;
+  }
+  @media (min-width: 960px) {
+    padding-left: 0px;
+  }
+}
+
+.advantages__part--3 {
+  position: relative;
+}
+
+.advantages__part--3::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/iphone-screen-mobile@1x.png);
+  height: 280px;
+  width: 165px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 60px;
+  @media (min-width: 660px) {
+    transform: scale(2); //качество ужасное, это нормально?
+    top: 100px; //не поднимается наверх
+  }
+  @media (min-width: 660px) {
+    transform: scale(1);
+    top: -280px;
   }
 }

@@ -1,22 +1,6 @@
-.achievement-help {
-  background-color: #f2f2f2;
-  padding-top: 40px;
-  align-self: center;
-  @media (min-width: 660px) {
-    background-color: #ffffff;
-    padding: 0;
-    order: 4;
-  }
-  @media (min-width: 660px) {
-    width: 940px;
-  }
-}
-
 .achievement {
   background-color: #f2f2f2;
   border: none;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-bottom: 42px;
   width: 254px;
   @media (min-width: 660px) {
@@ -26,7 +10,6 @@
     padding-left: 60px;
     margin-left: auto;
     margin-right: auto;
-
   }
   @media (min-width: 960px) {
     width: 820px;
@@ -35,7 +18,7 @@
   }
 }
 
-.achievement-legend {
+.achievement__legend {
   color: #d22856;
   font-size: 14px;
   line-height: 18px;
@@ -50,13 +33,13 @@
   }
 }
 
-.achievement-list {
+.achievement__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.achievement-item {
+.achievement__item {
   font-size: 18px;
   line-height: 30px;
 }

@@ -17,6 +17,13 @@
   }
 }
 
+.page-footer__index {
+  display: none;
+  @media (min-width: 660px) {
+    display: flex;
+  }
+}
+
 .page-footer__help {
   display: flex;
   align-self: center;
