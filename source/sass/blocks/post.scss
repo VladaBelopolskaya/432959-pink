@@ -7,6 +7,7 @@
   padding: 0;
   margin-bottom: 20px;
   width: 280px;
+  position: relative;
 
   @media (min-width: 660px) {
     width: 300px;
@@ -30,6 +31,12 @@
   }
 }
 
+.post__top {
+  position: absolute;
+  content: "";
+  //почему не работает?
+}
+
 .post__wrapper {
   display: flex;
   flex-direction: column;
@@ -47,26 +54,37 @@
   }
 }
 
+.post__photo-top {
+  width: 320px;
+  height: 138px;
+}
+
+.post__photo {
+  width: 280px;
+  height: 180px;
+}
+
 .post__help {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
   line-height: 24px;
 }
 
 .post__autor {
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-style: normal;
   margin: 0;
   padding: 0;
+  //как сделать, что бы блок ужимался под ширину контента? нужно для того что бы время и имя на одной строке были и стояли рядом
 }
 
 .post__time {
-  display: inline-block;
+  display: block;
   width: 140px;
   text-transform: uppercase;
   font-weight: 300;
@@ -82,9 +100,11 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
+  padding-left: 35px;
 }
 
 .post__text {
   quotes: none;
   display: inline-block;
+  margin-bottom: 10px;
 }

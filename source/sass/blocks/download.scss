@@ -45,8 +45,8 @@
   margin-right: auto;
 }
 
-//не помещается, хотя все цифры по макету
 .download__text {
+  text-transform: none;
   width: 235px;
   font-size: 14px;
   line-height: 24px;

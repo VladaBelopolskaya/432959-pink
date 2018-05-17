@@ -16,7 +16,7 @@
   }
 
   @media (min-width: 960px) {
-    width: 960px;
+    width: 940px;
     justify-content: space-between;
     //не понимаю почему блок с почтой выходит за рамки
   }
@@ -55,11 +55,12 @@
   text-align: center;
 
   @media (min-width: 660px) {
+    font-weight: 300;
     font-size: 40px;
     line-height: 50px;
     width: 375px;
     margin-left: auto;
-    margin-right: auto; //опять не помещается
+    margin-right: auto;
   }
 }
 
