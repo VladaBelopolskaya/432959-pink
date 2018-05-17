@@ -14,6 +14,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   @media (min-width: 960px) {
     width: 960px;
     justify-content: space-between;
@@ -25,17 +26,19 @@
   @media (min-width: 660px) {
     width: 240px;
   }
-  @media (min-width: 960px) {}
+
   &--telephone {
     @media (min-width: 960px) {
       order: 1;
     }
   }
+
   &--mail {
     @media (min-width: 960px) {
       order: 3;
     }
   }
+
   &--adress {
     @media (min-width: 960px) {
       order: 2;
@@ -50,6 +53,7 @@
   padding: 0;
   margin-bottom: 45px;
   text-align: center;
+
   @media (min-width: 660px) {
     font-size: 40px;
     line-height: 50px;

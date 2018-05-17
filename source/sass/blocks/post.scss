@@ -7,19 +7,23 @@
   padding: 0;
   margin-bottom: 20px;
   width: 280px;
+
   @media (min-width: 660px) {
     width: 300px;
     min-height: 455px;
     margin-left: 10px;
     margin-right: 10px;
   }
+
   @media (min-width: 960px) {
     min-height: 555px;
   }
+
   &--day {
     @media (min-width: 660px) {
       width: 620px;
     }
+
     @media (min-width: 960px) {
       width: 940px;
     }
@@ -29,11 +33,13 @@
 .post__wrapper {
   display: flex;
   flex-direction: column;
+
   @media (min-width: 660px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   @media (min-width: 960px) {
     width: 960px;
     margin-left: auto;

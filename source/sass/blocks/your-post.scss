@@ -9,10 +9,12 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
+
   @media (min-width: 660px) {
     width: 620px;
     flex-direction: row;
   }
+
   @media (min-width: 960px) {
     width: 800px;
     padding-right: 60px;

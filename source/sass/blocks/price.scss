@@ -10,6 +10,7 @@
     margin-right: auto;
     padding-bottom: 70px;
   }
+
   @media (min-width: 960px) {
     width: 940px;
     padding-bottom: 98px;
@@ -27,10 +28,12 @@
   width: 280px; //и тут не получается сделать фикс ширину
   &--empty {
     background-color: #f2f2f2;
+
     @media (max-width: 659px) {
       display: none;
     }
   }
+
   @media (min-width: 660px) {
     font-size: 14px;
     width: 155px; //почему не получается сделать фикс ширину?
@@ -39,6 +42,7 @@
     padding-left: 0;
     padding-right: 0;
   }
+
   @media (min-width: 960px) {
     width: 235px;
     padding: 24px 65px;
@@ -49,9 +53,11 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+
   @media (min-width: 660px) {
     font-size: 16px;
   }
+
   @media (min-width: 960px) {
     font-size: 18px;
   }
@@ -65,6 +71,7 @@
   @media (max-width: 659px) {
     display: none;
   }
+
   @media (min-width: 660px) {
     line-height: 30px;
     font-size: 14px;
@@ -73,6 +80,7 @@
     padding-top: 15px;
     width: 155px;
   }
+
   @media (min-width: 960px) {
     font-size: 18px;
     padding-left: 20px;
@@ -90,6 +98,7 @@
 
 .price__comment {
   text-transform: uppercase;
+
   @media (min-width: 660px) {
     display: none;
   }
@@ -101,6 +110,7 @@
   margin-right: auto;
   padding-bottom: 46px;
   padding-top: 38px;
+
   @media (min-width: 660px) {
     display: none;
   }

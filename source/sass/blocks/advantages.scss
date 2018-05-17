@@ -11,6 +11,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   @media (min-width: 960px) {
     display: flex;
     width: 940px;
@@ -28,10 +29,12 @@
   padding: 0;
   padding-left: 58px;
   padding-right: 58px;
+
   @media (min-width: 660px) {
     font-size: 40px;
     line-height: 45px;
   }
+
   @media (min-width: 960px) {
     font-size: 50px;
     line-height: 55px;
@@ -39,6 +42,7 @@
 
   &--first {
     padding-top: 45px;
+
     @media (min-width: 660px) {
       padding-left: 0;
       padding-right: 0;
@@ -48,12 +52,14 @@
   &--second {
     padding-top: 40px;
     padding-bottom: 70px;
+
     @media (min-width: 660px) {
       padding-top: 0;
       margin-left: auto;
       margin-right: auto;
       width: 330px;
     }
+
     @media (min-width: 960px) {
       width: 430px;
     }
@@ -91,10 +97,10 @@
 
   &--last {
     padding-bottom: 322px;
+
     @media (min-width: 660px) {
       padding-bottom: 44px;
     }
-
   }
 }
 
@@ -102,9 +108,11 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+
   @media (min-width: 660px) {
     padding-left: 310px;
   }
+
   @media (min-width: 960px) {
     padding-left: 0px;
   }
@@ -117,16 +125,18 @@
 .advantages__part--3::after {
   position: absolute;
   content: "";
-  background-image: url(../../img/iphone-screen-mobile@1x.png);
+  background-image: url("../../img/iphone-screen-mobile@1x.png");
   height: 280px;
   width: 165px;
   background-repeat: no-repeat;
   bottom: 0;
   left: 60px;
+
   @media (min-width: 660px) {
     transform: scale(2); //качество ужасное, это нормально?
     top: 100px; //не поднимается наверх
   }
+
   @media (min-width: 660px) {
     transform: scale(1);
     top: -280px;

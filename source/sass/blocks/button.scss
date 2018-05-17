@@ -12,9 +12,27 @@
   background-color: #2aab6d;
   margin-left: auto;
   margin-right: auto;
+
   &--form {
     @media (min-width: 660px) {
       margin: 0;
+      width: 300px;
+    }
+  }
+
+  &--error {
+    @media (min-width: 660px) {
+      width: 300px;
+    }
+  }
+
+  &--complete {
+    @media (min-width: 660px) {
+      width: 300px;
+    }
+
+    @media (min-width: 960px) {
+      width: 460px;
     }
   }
 }

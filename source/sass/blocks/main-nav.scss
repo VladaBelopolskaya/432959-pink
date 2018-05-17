@@ -1,7 +1,22 @@
+.main-nav {
+  color: #ffffff;
+  background-color: #283645;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: 960px) {
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
 .main-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
   @media (min-width: 960px) {
     display: flex;
     width: 620px;
@@ -16,6 +31,13 @@
 
 .main-nav__item {
   text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #485461;
+
+  @media (min-width: 960px) {
+    padding: 0;
+    border: none;
+  }
 }
