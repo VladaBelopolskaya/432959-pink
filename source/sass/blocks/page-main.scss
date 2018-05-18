@@ -2,90 +2,77 @@
   background-color: #ffffff;
 }
 
-.page-main__help-title {
-  background-color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-}
-
-.page-main__title {
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  text-align: center;
-  margin: 0 auto;
-  width: 230px;
-  padding-top: 34px;
-  padding-right: 20px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  @media (min-width: 660px) {
-    font-size: 50px;
-    line-height: 60px;
-    width: 480px;
-  }
-  @media (min-width: 960px) {
-    font-size: 50px;
-    line-height: 60px;
-    width: 750px;
-  }
-}
-
 .page-main__text {
   font-size: 14px;
   line-height: 30px;
   margin: 0 auto;
   text-align: center;
   width: 280px;
+
   @media (min-width: 660px) {
     width: 440px;
   }
+
   @media (min-width: 960px) {
     width: 580px;
   }
 
   &--first {
-    padding: 56px 38px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 92px;
+    padding-bottom: 75px;
+    font-size: 18px;
   }
 
   &--second {
     padding-bottom: 0;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 50px;
+    padding-top: 20px;
   }
+
   &--third {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 0;
   }
 
   &--form-up {
-    padding: 52px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 45px;
+    padding-bottom: 32px;
     width: 280px;
     text-align: center;
+
     @media (min-width: 660px) {
+      padding-top: 90px;
       font-size: 18px;
       width: 490px;
       padding-bottom: 0;
     }
+
     @media (min-width: 960px) {
       width: 760px;
       padding-top: 95px;
       padding-bottom: 70px;
     }
   }
+
   &--invisible {
     display: none;
+
     @media (min-width: 660px) {
       display: block;
       font-size: 18px;
       width: 490px;
       padding-top: 0;
-      padding-bottom: 52px;
+      padding-bottom: 75px;
       text-align: center;
     }
+
     @media (min-width: 960px) {
       display: inline;
     }

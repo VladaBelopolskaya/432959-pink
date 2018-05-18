@@ -10,38 +10,40 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__help">
-      <img class="page-header__logo-image" src="#" alt="logo">
-      <button class="page-header__button" type="button">Меню</button>
+    <div class="page-header__help-desktop">
+      <div class="page-header__help-menu">
+        <img class="page-header__logo-image" src="index.html" alt="logo">
+        <button class="page-header__button" type="button">Меню</button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__help-title">
+      <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
+    </div>
   </header>
   <main class="page-main">
-    <div class="page-main__help-title">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
-    </div>
     <div class="page-main__help-text">
-      <p class="page-main__text page-main__text--first">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
+      <p class="page-main__text page-main__text--first">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     </div>
     <div class="post__wrapper">
       <section class="post post--day">
-        <div>Панорама дня</div>
-        <img src="#" alt="">
+        <div class post__top>Панорама дня</div>
+        <img src="img/panorama-mobile@1x.jpg" alt="panorama" class="post__photo-top">
         <div class="post__help">
           <cite class="post__autor">
           Анна
@@ -54,7 +56,7 @@
         </div>
       </section>
       <section class="post">
-        <img src="#" alt="">
+        <img src="img/photo-car-mobile@1x.jpg" alt="car" class="post__photo">
         <div class="post__help">
           <cite class="post__autor">
           Левон
@@ -67,7 +69,7 @@
         </div>
       </section>
       <section class="post">
-        <img src="#" alt="">
+        <img src="img/photo-drumset-mobile@1x.jpg" alt="drumset" class="post__photo">
         <div class="post__help">
           <cite class="post__autor">
           Антон
@@ -80,7 +82,7 @@
         </div>
       </section>
       <section class="post">
-        <img src="#" alt="">
+        <img src="img/photo-window-mobile@1x.jpg" alt="window" class="post__photo">
         <div class="post__help">
           <cite class="post__autor">
           Борис
@@ -93,7 +95,7 @@
         </div>
       </section>
       <section class="post">
-        <img src="#" alt="">
+        <img src="img/photo-fair-mobile@1x.jpg" alt="fair" class="post__photo">
         <div class="post__help">
           <cite class="post__autor">
           Сергей
@@ -106,7 +108,7 @@
         </div>
       </section>
       <section class="post">
-        <img src="#" alt="">
+        <img src="img/photo-pov-mobile@1x.jpg" alt="pov" class="post__photo">
         <div class="post__help">
           <cite class="post__autor">
           Максим
@@ -119,7 +121,7 @@
         </div>
       </section>
       <section class="post">
-        <img src="#" alt="">
+        <img src="img/photo-wing-mobile@1x.jpg" alt="wing" class="post__photo">
         <div class="post__help">
           <cite class="post__autor">
           Надежда
@@ -140,11 +142,9 @@
         Выкладывайте все, что накопилось в телефоне!
       </p>
     </div>
-    <section>
-      <form action="" class="your-post">
-        <div class="your-post__photo">
-          <p>Тут будет картинка</p>
-        </div>
+    <section class="your-post">
+      <form action="" class="your-post__form">
+        <img src="img/photo-road-mobile@1x.jpg" alt="road" class="your-post__photo">
         <div class="your-post__button">
           <p>Тут будут ползунки</p>
           <button type="submit">Запостить</button>
