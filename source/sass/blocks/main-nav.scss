@@ -28,6 +28,16 @@
 .main-nav__item a {
   text-decoration: none;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba (210, 40, 86, 0.3); //не меняется цвет почему то
+  }
+
 }
 
 .main-nav__item {

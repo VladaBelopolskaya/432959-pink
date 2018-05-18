@@ -102,6 +102,14 @@
   padding-top: 20px;
   flex-grow: 1;
 
+  &:hover {
+    border-color: #000000;
+  }
+
+  &:focus {
+    border-color: #d22856; //не меняется цвет почему то
+  }
+
   @media (min-width: 660px) {
     width: 500px;
     margin-left: 60px;
