@@ -9,28 +9,30 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__help-index">
-      <div class="page-header__help-menu">
-        <img class="page-header__logo-image" src="index.html" alt="logo">
-        <button class="page-header__button" type="button">Меню</button>
+  <header class="page-header page-header--index">
+    <div class="page-header__wrapper">
+      <div class="page-header__help-desktop page-header__help-desktop--index">
+        <div class="page-header__help-menu">
+          <img class="page-header__logo-image" src="index.html" alt="logo">
+          <button class="page-header__button" type="button">Меню</button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
     </div>
     <section class="download">
       <p class="download__title">Взгляните на жизнь иначе!</p>
@@ -50,11 +52,13 @@
     <section class="advantages">
       <h2 class="visually-hidden">Приемущества</h2>
       <p class="advantages__text advantages__text--first">Устали от серости мегаполиса?</p>
-      <p class="advantages__text advantages__text--second">Нам есть, что вам предложить!</p>
+      <div class="advantages__help-text">
+        <p class="advantages__text advantages__text--second">Нам есть, что вам предложить!</p>
+      </div>
       <div class="advantages__help">
         <div class="advantages__part">
           <h3 class="advantages__title advantages__title--first">Поднимает настроение</h3>
-          <p class="advantages__description">Приложение позволит победить вам осеннюю хандру и дипрессию буквально в несколько кликов!</p>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и дипрессию буквально в несколько кликов!</p>
         </div>
         <div class="advantages__part">
           <h3 class="advantages__title">Меняет мир вокруг</h3>
@@ -69,8 +73,8 @@
     <section class="effect">
       <div class="effect__help">
         <h2 class="effect__title">Эффект на 24 часа!</h2>
-        <p>Британские ученые провели исследования и доказали, что положительный эффект от приложения длится целые сутки!</p>
-        <a>Узнать больше об исследовании</a>
+        <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использоания приложения длится целые сутки!</p>
+        <a class="effect__link">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="reviews">
@@ -163,10 +167,16 @@
           <p class="connection__contact-info">ул. Большая Конюшенная, 19/8</p>
         </div>
       </div>
-      <img src="#" alt="map">
+    </section>
+    <section class="map">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="map" class="map__image">
+      </picture>
     </section>
   </main>
-  <footer class="page-footer page-footer__index">
+  <footer class="page-footer page-footer--index">
     <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="logo">
     <ul class="page-footer__social">
       <li class="page-footer__social__item">

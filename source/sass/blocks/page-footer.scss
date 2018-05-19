@@ -28,13 +28,22 @@
       padding-top: 105px;
     }
   }
-}
 
-.page-footer__index {
-  display: none;
+  &--index {
+    display: none;
 
-  @media (min-width: 660px) {
-    display: flex;
+    @media (min-width: 660px) {
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      width: 660px;
+      display: flex;
+      padding-top: 40px;
+    }
+
+    @media (min-width: 960px) {
+      width: 960px;
+    }
   }
 }
 

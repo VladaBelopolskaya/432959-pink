@@ -3,30 +3,24 @@
 
   @media (min-width: 660px) {
     display: block;
-    width: 620px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 100px;
-    padding-bottom: 90px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (min-width: 960px) {
-    width: 940px;
+    margin: 0;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #f2f2f2; //откуда взялась белая полоса между блоками?
   }
 }
 
 .effect__help {
-  margin-left: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 320px;
   width: 310px;
   position: relative;
 
   @media (min-width: 960px) {
-    margin-left: 360px;
     width: 530px;
+    padding-top: 88px;
+    padding-bottom: 115px;
   }
 }
 
@@ -35,5 +29,22 @@
 
   @media (min-width: 960px) {
     width: 310px;
+    font-size: 30px;
+    line-height: 30px;
   }
+}
+
+.effect__text {
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 12px;
+  }
+}
+
+.effect__link {
+  color: #d22856;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: underline;
 }

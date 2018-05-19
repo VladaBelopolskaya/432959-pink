@@ -9,6 +9,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 960px) {
+    padding-bottom: 50px;
+  }
 }
 
 .reviews__title {
@@ -21,6 +25,11 @@
   @media (min-width: 660px) {
     order: 2;
   }
+
+  @media (min-width: 960px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .reviews__notice {
@@ -30,6 +39,11 @@
     display: block;
     font-size: 14px;
     font-weight: 400;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -46,6 +60,13 @@
   @media (min-width: 660px) {
     order: 1;
     width: 620px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 135px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 700px;
   }
 }
 

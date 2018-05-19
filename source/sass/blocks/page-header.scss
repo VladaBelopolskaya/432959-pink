@@ -22,28 +22,43 @@
   @media (min-width: 1920px) {
     background-image: url("../../img/bg-back-desktop@2x.jpg");
   }
-}
 
-.page-header__help-index {
-  min-height: 460px;
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
+  &--index::before { //опять сатана с этой рукой
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat; //background-image: url("../../img/iphone-hand-mobile@1x.png");
+    //height: 286px;
+    //width: 320px;
+    //left: 0;
+    //bottom: 0;
+    @media (min-width: 960px) {
+      background-image: url("../../img/iphone-hand-desktop@2x.png");
+      left: 0;
+      bottom: 0;
+    }
 
-  @media (min-width: 660px) {
-    min-height: 730px;
+    @media (min-width: 1920px) {
+      background-image: url("../../img/iphone-hand-desktop@2x.png");
+    }
   }
 }
 
-.page-header__help-index::before {
-  content: "";
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  height: 286px;
-  width: 320px;
-  position: absolute;
-  background-repeat: no-repeat;
-  left: 0;
-  bottom: 0;
+.page-header__help-desktop {
+  background-color: #283645;
+  position: relative;
+
+  @media (min-width: 960px) {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    background-color: transparent;
+  }
 }
 
 .page-header__help-menu {
@@ -54,7 +69,7 @@
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
 
-  background-color: #283645;
+  background-color: transparent;
 
   @media (min-width: 660px) {
     padding-bottom: 38px;
@@ -72,24 +87,6 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
-
-.page-header__help-desktop {
-  background-color: #283645;
-
-  @media (min-width: 960px) {
-    display: flex;
-    padding-top: 35px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-    background-color: transparent;
-  }
-}
-
 
 .page-header__help-title {
   background-color: rgba(0, 0, 0, 0);
