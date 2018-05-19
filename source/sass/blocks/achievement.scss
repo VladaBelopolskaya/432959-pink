@@ -47,10 +47,11 @@
   }
 
   @media (min-width: 960px) {
+    padding-top: 42px;
+    padding-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    //можно 2 li обернуть в div, что бы сетку нормально сделать?
   }
 }
 
@@ -68,6 +69,30 @@
     box-sizing: border-box;
     padding-left: 100px;
     width: 310px;
+
+    &--shark {
+      order: 1;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--norris {
+      order: 2;
+    }
+
+    &--souvenirs {
+      order: 5;
+    }
+
+    &--castle {
+      order: 3;
+    }
+
+    &--hotel {
+      order: 6;
+    }
   }
 }
 

@@ -5,11 +5,15 @@
   margin: 0;
   padding: 0;
   align-self: center;
+  padding-top: 25px;
+  padding-bottom: 28px;
 
   @media (min-width: 660px) {
     border: 1px solid #e5e5e5;
     order: 3;
     width: 620px;
+    padding-top: 0;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 50px;
@@ -61,7 +65,7 @@
   margin-bottom: 16px;
 
   @media (min-width: 660px) {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: 960px) {

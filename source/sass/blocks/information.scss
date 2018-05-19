@@ -64,8 +64,14 @@
     order: 6;
     flex-direction: row;
     justify-content: space-between;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  //почему на 960 не срабатывает правило?
+
+  @media (min-width: 960px) {
+    width: 940px;
+  } //почему на 960 не срабатывает правило?
 }
 
 .information__text {
@@ -85,7 +91,19 @@
     width: 185px;
   }
 
+  @media (min-width: 960px) {
+    width: 320px;
+  }
+
   &--red {
     color: #d22856;
+  }
+
+  &--invisible {
+    display: none;
+
+    @media (min-width: 960px) {
+      display: inline;
+    }
   }
 }

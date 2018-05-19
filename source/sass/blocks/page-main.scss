@@ -92,12 +92,13 @@
       font-size: 18px;
       width: 490px;
       padding-top: 0;
-      padding-bottom: 75px;
+      padding-bottom: 73px;
       text-align: center;
     }
 
     @media (min-width: 960px) {
       display: inline;
+      padding-bottom: 75px;
     }
   }
 }
