@@ -18,6 +18,16 @@
     padding-right: 25px;
     padding-top: 75px;
   }
+
+  &--photo {
+    @media (min-width: 660px) {
+      padding-top: 40px;
+    }
+
+    @media (min-width: 960px) {
+      padding-top: 105px;
+    }
+  }
 }
 
 .page-footer__index {
@@ -31,6 +41,7 @@
 .page-footer__help {
   display: flex;
   align-self: center;
+  align-items: center;
 }
 
 .page-footer__logo {

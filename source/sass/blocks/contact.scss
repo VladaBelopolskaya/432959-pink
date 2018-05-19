@@ -94,6 +94,7 @@
 
 .contact__input {
   box-sizing: border-box;
+  border: 1px solid #e5e5e5;
   font-size: 18px;
   line-height: 20px;
   width: 280px;
@@ -103,11 +104,12 @@
   flex-grow: 1;
 
   &:hover {
-    border-color: #000000;
+    border: 1px solid #000000;
   }
 
   &:focus {
-    border-color: #d22856; //не меняется цвет почему то
+    outline: none;
+    border: 1px solid #d22856;
   }
 
   @media (min-width: 660px) {
