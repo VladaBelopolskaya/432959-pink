@@ -63,13 +63,53 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 16px;
-
+  position: relative;
   @media (min-width: 660px) {
     margin-bottom: 26px;
   }
 
   @media (min-width: 960px) {
     margin-bottom: 10px;
+  }
+
+  &--telephone {
+    &::after {
+      @media (min-width: 660px) {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #f2f2f2;
+        background-image: url("../../img/icon-phone.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 60px;
+      }
+
+      @media (min-width: 960px) {
+        right: 0;
+      }
+    }
+  }
+
+  &--email {
+    &::after {
+      @media (min-width: 660px) {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #f2f2f2;
+        background-image: url("../../img/icon-mail.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 60px;
+      }
+
+      @media (min-width: 960px) {
+        right: 0;
+      }
+    }
   }
 }
 
@@ -122,6 +162,7 @@
     margin-right: 60px;
     margin-bottom: 10px;
     padding-bottom: 18px;
+    padding-right: 62px;
   }
 
   @media (min-width: 960px) {

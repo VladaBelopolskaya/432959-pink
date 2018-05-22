@@ -18,6 +18,8 @@
     width: 940px;
     padding-top: 310px;
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &::before {
@@ -152,19 +154,24 @@
 .advantages__part--3 {
   position: relative;
 
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    height: 280px;
+    width: 158px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 61px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/iphone-screen-mobile@2x.png");
+    }
+  }
+
   @media (min-width: 960px) {
     width: 272px;
 
-    &::after {
-      //почему не появляется?
-      position: absolute;
-      content: "";
-      background-image: url("../../img/iphone-screen-decktop@1x.png");
-      height: 300px;
-      width: 190px;
-      background-repeat: no-repeat;
-      bottom: 0;
-      left: 0;
-    }
+
   }
 }

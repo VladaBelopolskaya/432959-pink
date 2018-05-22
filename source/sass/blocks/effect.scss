@@ -17,6 +17,16 @@
   width: 310px;
   position: relative;
 
+  ::after { //я псевдо элемент ставлю этому классу, а он добавляется дочерним элементам. как так?
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icon-timer.svg");
+    width: 310px;
+    height: 350px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: 960px) {
     width: 530px;
     padding-top: 88px;

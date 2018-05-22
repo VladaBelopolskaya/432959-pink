@@ -71,7 +71,7 @@
 
   @media (min-width: 960px) {
     width: 940px;
-  } //почему на 960 не срабатывает правило?
+  }
 }
 
 .information__text {
@@ -94,16 +94,17 @@
   @media (min-width: 960px) {
     width: 320px;
   }
+}
 
-  &--red {
-    color: #d22856;
-  }
 
-  &--invisible {
-    display: none;
+.information__text-red {
+  color: #d22856;
+}
 
-    @media (min-width: 960px) {
-      display: inline;
-    }
+.information__text-invisible {
+  display: none;
+
+  @media (min-width: 960px) {
+    display: inline;
   }
 }

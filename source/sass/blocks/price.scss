@@ -8,6 +8,7 @@
 }
 
 .price__list {
+
   @media (min-width: 660px) {
     width: 620px;
     margin-left: auto;
@@ -26,7 +27,8 @@
 }
 
 .price__name {
-  display: block; // флекс у родителя не помогает, они в колонку
+  box-sizing: border-box;
+  display: block;
   background-color: #283645;
   color: #ffffff;
   font-size: 18px;
@@ -34,10 +36,10 @@
   font-weight: 300;
   text-transform: uppercase;
   padding: 24px 90px;
-  width: 280px; //и тут не получается сделать фикс ширину
+  width: 280px;
+
   &--empty {
     background-color: #f2f2f2;
-
     @media (max-width: 659px) {
       display: none;
     }
@@ -74,6 +76,7 @@
 
 .price__line {
   background-color: #ffffff;
+  display: flex;
 }
 
 .price__field {
@@ -100,9 +103,20 @@
 }
 
 .price__available {
+
+  box-sizing: border-box;
+  border: 1px solid black;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 24px;
+
+  @media (min-width: 660px) {
+    width: 155px;
+  }
+
+  @media (min-width: 960px) {
+    width: 235px;
+  }
 }
 
 .price__comment {
