@@ -1,16 +1,16 @@
 .download {
   color: #ffffff;
   background-color: #1d2631;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 28px;
+  margin-top: 395px;
 
   @media (min-width: 660px) {
-    position: absolute;
-    content: " ";
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     bottom: 110px;
+    margin-top: 0;
   }
 }
 
@@ -30,19 +30,43 @@
 }
 
 .download__button {
+  box-sizing: border-box;
+  width: 282px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 28px;
+
+  @media (min-width: 960px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.download__button a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: none;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  width: 280px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .download__platform {
-  width: 280px;
+  width: 210px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 960px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .download__text {
@@ -54,10 +78,22 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  @media (min-width: 960px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .download__img {
   background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 50px;
+  height: 60px;
+  font-size: 0;
+  line-height: 0;
 
   &--ios {
     background-image: url("../img/logo-apple.svg");

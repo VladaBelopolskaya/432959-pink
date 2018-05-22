@@ -1,6 +1,22 @@
 .price {
   background-color: #f2f2f2;
   padding-top: 66px;
+  position: relative;
+
+  @media (min-width: 960px) {
+    padding-top: 140px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    width: 100%;
+    background-size: 100%;
+    height: 100%;
+  }
 }
 
 .price__list {
@@ -22,7 +38,8 @@
 }
 
 .price__name {
-  display: block; //но они же в столбик перестраиваются тогда, а не в линию
+  box-sizing: border-box;
+  display: block;
   background-color: #283645;
   color: #ffffff;
   font-size: 18px;
@@ -30,7 +47,8 @@
   font-weight: 300;
   text-transform: uppercase;
   padding: 24px 90px;
-  width: 280px; //и тут не получается сделать фикс ширину
+  width: 280px;
+
   &--empty {
     background-color: #f2f2f2;
 
@@ -70,6 +88,7 @@
 
 .price__line {
   background-color: #ffffff;
+  display: flex;
 }
 
 .price__field {
@@ -96,25 +115,24 @@
 }
 
 .price__available {
+
+  box-sizing: border-box;
+  border: 1px solid black;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 24px;
+
+  @media (min-width: 660px) {
+    width: 155px;
+  }
+
+  @media (min-width: 960px) {
+    width: 235px;
+  }
 }
 
 .price__comment {
   text-transform: uppercase;
-
-  @media (min-width: 660px) {
-    display: none;
-  }
-}
-
-.price__button {
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 46px;
-  padding-top: 38px;
 
   @media (min-width: 660px) {
     display: none;

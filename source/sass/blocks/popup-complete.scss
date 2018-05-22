@@ -19,17 +19,6 @@
   @media (min-width: 960px) {
     width: 780px;
   }
-
-  &--color-white {
-    background-color: #ffffff;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  &--color-gray {
-    background-color: #f2f2f2;
-    padding: 48px 20px;
-  }
 }
 
 .popup-complete__title {
@@ -51,7 +40,6 @@
   }
 }
 
-//br делать перенос строки?
 .popup-complete__text {
   margin: 0 auto;
   padding-bottom: 25px;
@@ -76,7 +64,7 @@
   }
 }
 
-.popup-complete__button-gray {
+.popup-complete__button--gray {
   background-color: #f2f2f2;
   padding: 52px 20px;
 

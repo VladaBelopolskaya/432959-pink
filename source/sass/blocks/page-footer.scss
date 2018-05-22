@@ -10,7 +10,7 @@
     flex-direction: row;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 85px;
+    padding-top: 90px;
   }
 
   @media (min-width: 960px) {
@@ -18,30 +18,47 @@
     padding-right: 25px;
     padding-top: 75px;
   }
-}
 
-.page-footer__index {
-  display: none;
+  &--photo {
+    @media (min-width: 660px) {
+      padding-top: 40px;
+    }
 
-  @media (min-width: 660px) {
-    display: flex;
+    @media (min-width: 960px) {
+      padding-top: 100px;
+    }
+  }
+
+  &--index {
+    display: none;
+
+    @media (min-width: 660px) {
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      width: 660px;
+      display: flex;
+      padding-top: 40px;
+    }
+
+    @media (min-width: 960px) {
+      width: 960px;
+    }
   }
 }
 
 .page-footer__help {
   display: flex;
   align-self: center;
-}
+  align-items: center;
 
-.page-footer__logo {
-  width: 150px;
-  height: 40px;
-  margin-bottom: 42px;
-  margin-left: auto;
-  margin-right: auto;
+  &:hover path,
+  &:focus path {
+    fill: #283645;
+  }
 
-  @media (min-width: 660px) {
-    margin: 0;
+  &:active path {
+    fill: #bec2c7;
   }
 }
 
@@ -51,7 +68,6 @@
   margin-bottom: 32px;
   padding: 0;
   width: 180px;
-  height: 50px; //временно, для того что бы подогнать по пп
   display: flex;
   justify-content: space-between;
 
@@ -62,8 +78,53 @@
   }
 }
 
-//не могу выровнять относительно слова разработано
 .page-footer__link {
-  width: 35px;
+  width: 28px;
   height: 35px;
+}
+
+.page-footer__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__text {
+  @media (min-width: 660px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 20px;
+  }
+}
+
+.page-footer__logo {
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+
+  @media (min-width: 660px) {
+    background-image: url("../../img/logo-pink-white-tablet.svg"); //как менять цвет? другие свг вставлять?
+    margin: 0;
+  }
+
+  @media (min-width: 960px) {
+    background-image: url("../../img/logo-pink-white-desktop.svg");
+  }
 }

@@ -1,8 +1,17 @@
 .connection {
   background-color: #ffffff;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 48px;
+  padding-bottom: 20px;
+
+  @media (min-width: 660px) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 70px;
+  }
 }
 
 .connection__contacts {
@@ -17,8 +26,7 @@
 
   @media (min-width: 960px) {
     width: 940px;
-    justify-content: space-between;
-    //не понимаю почему блок с почтой выходит за рамки
+    justify-content: space-around;
   }
 }
 
@@ -51,7 +59,7 @@
   line-height: 28px;
   margin: 0;
   padding: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   text-align: center;
 
   @media (min-width: 660px) {
@@ -61,6 +69,13 @@
     width: 375px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 50px;
+    line-height: 55px;
+    width: 464px;
+    margin-bottom: 60px;
   }
 }
 
@@ -80,7 +95,16 @@
   color: #d22856;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
-  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-top: 5px;
   text-align: center;
+
+  @media (min-width: 660px) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }

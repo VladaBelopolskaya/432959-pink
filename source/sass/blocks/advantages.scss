@@ -4,10 +4,12 @@
 }
 
 .advantages__help {
+  position: relative;
+  padding-top: 56px;
+
   @media (min-width: 660px) {
     width: 620px;
     padding: 20px;
-    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -15,8 +17,26 @@
   @media (min-width: 960px) {
     display: flex;
     width: 940px;
-    padding-top: 255px;
+    padding-top: 310px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    width: 100%; //почему на 660 не тянется?
+    background-size: 100%;
+    height: 100%;
+  }
+}
+
+.advantages__help-text {
+  background-color: #ffffff;
 }
 
 .advantages__text {
@@ -47,11 +67,15 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    @media (min-width: 960px) {
+      padding-top: 70px;
+    }
   }
 
   &--second {
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 
     @media (min-width: 660px) {
       padding-top: 0;
@@ -61,6 +85,7 @@
     }
 
     @media (min-width: 960px) {
+      padding-top: 5px;
       width: 430px;
     }
   }
@@ -74,33 +99,43 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
-  padding-top: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
 
-  &--first {
-    padding-top: 54px;
+  @media (min-width: 960px) {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 22px;
+    padding-top: 58px;
+    line-height: 31px;
   }
 }
 
 .advantages__description {
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
   background-color: #f2f2f2;
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   &--last {
-    padding-bottom: 322px;
+    padding-bottom: 312px;
 
     @media (min-width: 660px) {
       padding-bottom: 44px;
     }
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 31px;
   }
 }
 
@@ -108,6 +143,7 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 14px;
 
   @media (min-width: 660px) {
     padding-left: 310px;
@@ -115,20 +151,39 @@
 
   @media (min-width: 960px) {
     padding-left: 0;
+    width: 242px;
   }
 }
 
 .advantages__part--3 {
   position: relative;
-}
 
-.advantages__part--3::after {
-  position: absolute;
-  content: "";
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
-  height: 280px;
-  width: 165px;
-  background-repeat: no-repeat;
-  bottom: 0;
-  left: 60px;
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    height: 280px;
+    width: 158px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 61px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/iphone-screen-mobile@2x.png");
+    }
+
+    @media (min-width: 660px) {
+      background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+      height: 485px;
+      width: 268px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../../img/iphone-screen-3-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: 960px) {
+      width: 272px;
+    }
+  }
 }

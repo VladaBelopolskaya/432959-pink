@@ -8,7 +8,7 @@
 
   @media (min-width: 960px) {
     font-weight: 400;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     text-transform: none;
   }
 }
@@ -22,6 +22,7 @@
     display: flex;
     width: 620px;
     justify-content: space-between;
+    padding-top: 15px;
   }
 }
 
@@ -35,9 +36,8 @@
   }
 
   &:active {
-    color: rgba (210, 40, 86, 0.3); //не меняется цвет почему то
+    color: rgba(210, 40, 86, 0.3);
   }
-
 }
 
 .main-nav__item {
@@ -50,5 +50,11 @@
   @media (min-width: 960px) {
     padding: 0;
     border: none;
+  }
+
+  &--active {
+    @media (min-width: 960px) {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }

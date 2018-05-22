@@ -52,7 +52,7 @@
   }
 
   @media (min-width: 960px) {
-    //как его поднять выше? свойство align-items у родителя не помогает :(
+    align-self: flex-start;
   }
 }
 
@@ -64,8 +64,14 @@
     order: 6;
     flex-direction: row;
     justify-content: space-between;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  //почему на 960 не срабатывает правило?
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
 }
 
 .information__text {
@@ -85,7 +91,20 @@
     width: 185px;
   }
 
-  &--red {
-    color: #d22856;
+  @media (min-width: 960px) {
+    width: 320px;
+  }
+}
+
+
+.information__text-red {
+  color: #d22856;
+}
+
+.information__text-invisible {
+  display: none;
+
+  @media (min-width: 960px) {
+    display: inline;
   }
 }

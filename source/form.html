@@ -10,31 +10,33 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__help-desktop">
-      <div class="page-header__help-menu">
-        <img class="page-header__logo-image" src="index.html" alt="logo">
-        <button class="page-header__button" type="button">Меню</button>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+    <div class="page-header__wrapper">
+      <div class="page-header__help-desktop">
+        <div class="page-header__help-menu">
+          <a class="page-header__logo" href="index.html"></a>
+          <button class="page-header__button" type="button">Меню</button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="photo.html">Фотографии</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
           </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="page-header__help-title">
-      <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
+          </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="page-header__help-title">
+        <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
   </header>
   <main class="page-main">
     <p class="page-main__text page-main__text--form-up">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту! <span class="page-main__text--invisible">Пожалуйста, заполните форму ниже:</span></p>
@@ -60,29 +62,41 @@
         <fieldset class="achievement">
           <legend class="achievement__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="achievement__list">
-            <li class="achievement__item">
-              <label for="achievement-shark">Сделал селфи с акулой</label>
-              <input type="checkbox" name="shark" class="acievement__check" id="achievement-shark" checked>
+            <li class="achievement__item achievement__item--shark">
+              <label for="achievement-shark" class="achievement__label">Сделал селфи с акулой
+              <input type="checkbox" name="shark" class="achievement__check" id="achievement-shark" checked>
+              <span tabindex=0></span>
+              </label>
             </li>
-            <li class="achievement__item">
-              <label for="achievement-beach">Обгорел на пляже</label>
-              <input type="checkbox" name="beach" class="acievement__check" id="achievement-beach" checked>
+            <li class="achievement__item achievement__item--beach">
+              <label for="achievement-beach" class="achievement__label">Обгорел на пляже
+              <input type="checkbox" name="beach" class="achievement__check" id="achievement-beach" checked>
+              <span tabindex=0></span>
+              </label>
             </li>
-            <li class="achievement__item">
-              <label for="achievement-norris">Видел Чака Норриса</label>
-              <input type="checkbox" name="norris" class="acievement__check" id="achievement-norris">
+            <li class="achievement__item achievement__item--norris">
+              <label for="achievement-norris" class="achievement__label">Видел Чака Норриса
+              <input type="checkbox" name="norris" class="achievement__check" id="achievement-norris">
+              <span tabindex=0></span>
+              </label>
             </li>
-            <li class="achievement__item">
-              <label for="achievement-souvenirs">Накупил сувениров</label>
-              <input type="checkbox" name="souvenirs" class="acievement__check" id="achievement-souvenirs">
+            <li class="achievement__item achievement__item--souvenirs">
+              <label for="achievement-souvenirs" class="achievement__label">Накупил сувениров
+              <input type="checkbox" name="souvenirs" class="achievement__check" id="achievement-souvenirs">
+              <span tabindex=0></span>
+              </label>
             </li>
-            <li class="achievement__item">
-              <label for="achievement-castle">Удержал башню</label>
-              <input type="checkbox" name="castle" class="acievement__check" id="achievement-castle" checked>
+            <li class="achievement__item achievement__item--castle">
+              <label for="achievement-castle" class="achievement__label">Удержал башню
+              <input type="checkbox" name="castle" class="achievement__check" id="achievement-castle" checked>
+              <span tabindex=0></span>
+              </label>
             </li>
-            <li class="achievement__item">
-              <label for="achievement-hotel">Разгромил отель</label>
-              <input type="checkbox" name="hotel" class="acievement__check" id="achievement-hotel">
+            <li class="achievement__item achievement__item--hotel">
+              <label for="achievement-hotel" class="achievement__label">Разгромил отель
+              <input type="checkbox" name="hotel" class="achievement__check" id="achievement-hotel">
+              <span tabindex=0></span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -90,11 +104,11 @@
       <fieldset class="contact">
         <legend class="contact__legend">Контактная информация</legend>
         <ul class="contact__list">
-          <li class="contact__item">
+          <li class="contact__item contact__item--telephone">
             <label for="contact-telephone" class="contact__label">Номер телефона</label>
             <input type="tel" class="contact__input" name="telephone" id="contact-telephone" placeholder="Номер, пожалуйста">
           </li>
-          <li class="contact__item">
+          <li class="contact__item contact__item--email">
             <label for="contact-email" class="contact__label">Адрес почты</label>
             <input type="email" class="contact__input" name="email" id="contact-email" placeholder="Введите почту*">
           </li>
@@ -105,62 +119,68 @@
           <legend class="platform__legend">С каким приложением путешествовали?</legend>
           <ul class="platform__list">
             <li class="platform__item">
-              <label for="iOS">Pink для iOS</label>
+              <label for="iOS">Pink для iOS
               <input type="radio" class="platform__radio" name="os" value="iOS" id="iOS" checked>
+              <span tabindex=0></span>
+              </label>
             </li>
             <li class="platform__item">
-              <label for="android">Pink на Android</label>
+              <label for="android">Pink на Android
               <input type="radio" class="platform__radio" name="os" value="android" id="android">
+              <span tabindex=0></span>
+              </label>
             </li>
             <li class="platform__item">
-              <label for="windows">Windows Phone</label>
+              <label for="windows">Windows Phone
               <input type="radio" class="platform__radio" name="os" value="windows" id="windows">
+              <span tabindex=0></span>
+              </label>
             </li>
           </ul>
         </fieldset>
       </div>
       <fieldset class="feedback">
         <legend class="feedback__legend"><label for="comment">Опишите свои эмоции</label></legend>
-        <textarea id="comment" name="comment" rows="5" class="feedback__area">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <textarea id="comment" name="comment" rows="3" class="feedback__area">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
       <div class="information__down">
         <button type="submit" class="button button--form">Отправить форму</button>
-        <p class="information__text"><span class="information__text--red">*</span> — обязательные поля</p>
+        <p class="information__text"><span class="information__text-red">*</span> — обязательные <span class="information__text-invisible">для заполнения</span> поля</p>
       </div>
     </form>
 
   </main>
   <footer class="page-footer">
-    <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="logo">
+    <a class="page-footer__logo" href="index.html"></a>
     <ul class="page-footer__social">
-      <li class="page-footer__social__item">
-        <a href="#"><img src="img/icon-twitter.svg"></a>
+      <li class="page-footer__social-item">
+        <a href="#"><img src="img/icon-twitter.svg" alt="twitter"></a>
       </li>
-      <li class="page-footer__social__item">
-        <a href="#"><img src="img/icon-facebook.svg"></a>
+      <li class="page-footer__social-item">
+        <a href="#"><img src="img/icon-facebook.svg" alt="facebook"></a>
       </li>
-      <li class="page-footer__social__item">
-        <a href="#"><img src="img/icon-youtube.svg"></a>
+      <li class="page-footer__social-item">
+        <a href="#"><img src="img/icon-youtube.svg" alt="youtube"></a>
       </li>
     </ul>
     <div class="page-footer__help">
-      <p class="page-footer__text">Разработано:</p>
-      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="html academy"></a>
+      <p class="page-footer__text">Разработано</p>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" fill="#d22856"/>
+</svg></a>
     </div>
   </footer>
   <article class="popup-error">
     <h1 class="popup-error__title">Что-то пошло не так!</h1>
     <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <div class="popup-error__button popup-error__button-gray">
+    <div class="popup-error__button popup-error__button--gray">
       <button class="button button--error">OK</button>
     </div>
   </article>
   <article class="popup-complete">
-    <div class="popup-error__container popup-error__container-white">
-      <h1 class="popup-complete__title">Ваша заявка отправлена</h1>
-      <p class="popup-complete__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-    </div>
-    <div class="popup-complete__button popup-complete__button-gray">
+    <h1 class="popup-complete__title">Ваша заявка отправлена</h1>
+    <p class="popup-complete__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <div class="popup-complete__button popup-complete__button--gray">
       <button class="button button--complete">Закрыть окно</button>
     </div>
   </article>
