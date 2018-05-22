@@ -1,0 +1,66 @@
+.slider {
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+
+  &--reviews {
+    @media (min-width: 660px) {
+      order: 3;
+      margin-top: 38px;
+    }
+
+    @media (min-width: 960px) {
+      display: none;
+    }
+  }
+
+  &--price {
+    padding-bottom: 46px;
+    padding-top: 38px;
+
+    @media (min-width: 660px) {
+      display: none;
+    }
+  }
+}
+
+.slider__button {
+  box-sizing: border-box;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  line-height: 0;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  &:hover,
+  &:focus {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+
+  &--active {
+    width: 12px;
+    height: 12px;
+    border: 3px solid #283645;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+}

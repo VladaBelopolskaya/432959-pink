@@ -5,23 +5,23 @@
   font-weight: 700;
   text-transform: uppercase;
 
+  width: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
   background-color: #283645;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: center;
   background-repeat: no-repeat;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
   }
 
-
-  width: auto;
-  margin: 0;
-  padding: 0;
-  position: relative;
-
   @media (min-width: 660px) {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-position: top; //как подвинуть фоновое изображение ?
+    background-position: bottom; //как подвинуть фоновое изображение ?
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../../img/bg-back-tablet@2x.jpg");
@@ -38,22 +38,29 @@
   }
 
   &--index::before {
-    //опять сатана с этой рукой
     content: "";
     position: absolute;
-    background-repeat: no-repeat; //background-image: url("../../img/iphone-hand-mobile@1x.png");
-    //height: 286px;
-    //width: 320px;
-    //left: 0;
-    //bottom: 0;
-    @media (min-width: 960px) {
-      background-image: url("../../img/iphone-hand-desktop@2x.png");
-      left: 0;
-      bottom: 0;
+    background-repeat: no-repeat;
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    height: 286px;
+    width: 320px;
+    left: 0;
+    bottom: 272px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/iphone-hand-mobile@2x.jpg");
     }
 
-    @media (min-width: 1920px) {
-      background-image: url("../../img/iphone-hand-desktop@2x.png");
+    @media (min-width: 660px) {
+      height: 550px; //почему она так криво обрезалась?
+      width: 470px;
+      background-image: url("../../img/iphone-hand-tablet@1x.png");
+      left: 0;
+      bottom: 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../../img/iphone-hand-tablet@2x.jpg");
+      }
     }
   }
 }
@@ -190,8 +197,7 @@
 .page-header__logo {
   background-repeat: no-repeat;
   width: 150px;
-  height: 30px;
-
+  height: 30px; //иконку текстом вставлять?
 
   @media (min-width: 660px) {
     background-image: url("../../img/logo-pink-white-tablet.svg"); //как менять цвет? другие свг вставлять?

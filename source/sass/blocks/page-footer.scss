@@ -60,20 +60,6 @@
   &:active path {
     fill: #bec2c7;
   }
-
-}
-
-.page-footer__logo {
-  //для изменения цвета вставлять всю свгшку в код html?
-  width: 150px;
-  height: 40px;
-  margin-bottom: 42px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: 660px) {
-    margin: 0;
-  }
 }
 
 .page-footer__social {
@@ -129,9 +115,13 @@
   background-repeat: no-repeat;
   width: 150px;
   height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
 
   @media (min-width: 660px) {
     background-image: url("../../img/logo-pink-white-tablet.svg"); //как менять цвет? другие свг вставлять?
+    margin: 0;
   }
 
   @media (min-width: 960px) {

@@ -45,6 +45,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between; //почему не работает?
+
   @media (min-width: 660px) {
     width: 270px;
   }
