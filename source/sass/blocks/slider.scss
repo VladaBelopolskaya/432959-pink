@@ -38,9 +38,10 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  &:hover, //почему не работает?
+  &:hover,
   &:focus {
     background-color: #7e868f;
+    border: 0;
   }
 
   &:active {

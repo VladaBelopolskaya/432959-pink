@@ -13,7 +13,13 @@
     <div class="page-header__wrapper">
       <div class="page-header__help-desktop">
         <div class="page-header__help-menu">
-          <a class="page-header__logo" href="index.html"></a>
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="155" height="44" alt="pink">
+            </picture>
+          </a>
           <button class="page-header__button" type="button">Меню</button>
         </div>
         <nav class="main-nav">
@@ -204,7 +210,12 @@
     </section>
   </main>
   <footer class="page-footer page-footer--photo">
-    <a class="page-footer__logo" href="index.html"></a>
+    <a class="page-footer__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img src="img/logo-pink-blue-mobile.svg" width="155" height="44" alt="pink">
+      </picture>
+    </a>
     <ul class="page-footer__social">
       <li class="page-footer__social-item">
         <a href="#"><img src="img/icon-twitter.svg" alt="twitter"></a>

@@ -125,16 +125,15 @@
   }
 }
 
-.achievement__check:hover + span {
+.achievement__check:hover + span, .achievement__check:focus + span{
   border: 1px solid #000000;
 
 }
 
-
-.achievement__check:focus + span, // если поставить фокус к ховеру странные вещи творятся
-.achievement__check:active + span {
+.achievement__check:active + span,
+.achievement__check + span:focus {
   border: 1px solid #d22856;
-  outline: none;   //не срабатывает
+  outline: none;
 }
 
 .achievement__check:checked + span {

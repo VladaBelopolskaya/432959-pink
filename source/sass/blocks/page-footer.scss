@@ -38,7 +38,7 @@
       margin-right: auto;
       width: 660px;
       display: flex;
-      padding-top: 40px;
+      padding-top: 35px;
     }
 
     @media (min-width: 960px) {
@@ -119,19 +119,10 @@
 }
 
 .page-footer__logo {
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 45px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 42px;
+  width: 155px;
 
   @media (min-width: 660px) {
-    background-image: url("../../img/logo-pink-white-tablet.svg"); //как менять цвет? другие свг вставлять?
-    margin: 0;
-  }
-
-  @media (min-width: 960px) {
-    background-image: url("../../img/logo-pink-white-desktop.svg");
+    margin-bottom: 0;
   }
 }

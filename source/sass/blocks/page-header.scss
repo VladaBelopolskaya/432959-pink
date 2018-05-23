@@ -52,7 +52,7 @@
 
     @media (min-width: 660px) {
       height: 545px;
-      width: 700px;
+      width: 100%;
       background-image: url("../../img/iphone-hand-tablet@1x.png");
       left: -20px;
       bottom: 0;
@@ -66,7 +66,7 @@
       height: 645px;
       width: 1050px;
       background-image: url("../../img/iphone-hand-desktop@1x.png");
-      left: 0;
+      left: 45px;
       bottom: 0;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -105,7 +105,7 @@
   background-color: transparent;
 
   @media (min-width: 660px) {
-    padding-bottom: 38px;
+    padding-bottom: 30px;
     padding-top: 25px;
     padding-left: 20px;
     padding-right: 20px;
@@ -202,19 +202,5 @@
 
   @media (min-width: 960px) {
     display: none;
-  }
-}
-
-.page-header__logo {
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 30px; //иконку текстом вставлять?
-  @media (min-width: 660px) {
-    background-image: url("../../img/logo-pink-white-tablet.svg"); //как менять цвет? другие свг вставлять?
-    height: 45px;
-  }
-
-  @media (min-width: 960px) {
-    background-image: url("../../img/logo-pink-white-desktop.svg");
   }
 }

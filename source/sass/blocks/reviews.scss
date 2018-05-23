@@ -19,17 +19,17 @@
   @media (min-width: 960px) {
     padding-top: 45px;
     padding-bottom: 50px;
-  }
 
-  ::before {
-    position: absolute;
-    content: "";
-    background-image: url("../../img/icon-quotes.svg");
-    width: 100px;
-    height: 68px;
-    left: 46%;
-    top: 65px;
-    background-repeat: no-repeat;
+    ::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/icon-quotes.svg");
+      width: 100px;
+      height: 68px;
+      left: 46%;
+      top: 65px;
+      background-repeat: no-repeat;
+    }
   }
 }
 
