@@ -137,7 +137,7 @@
 }
 
 .achievement__check:checked + span {
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("../../img/icon-yes.svg"); //как поменять цвет?
   background-repeat: no-repeat;
   background-position: center;
 }

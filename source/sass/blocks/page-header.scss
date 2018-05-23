@@ -188,19 +188,76 @@
   border: 0;
   padding: 0;
   font-size: 0;
-  width: 30px;
-  height: 30px;
-  background-image: url("../../img/icon-no.svg"); //как менять цвет? другие свг вставлять?
-  background-repeat: no-repeat;
-  background-color: transparent;
-  margin-top: auto;
-  margin-right: 20px;
-
-  @media (min-width: 660px) {
-    margin-right: 0;
-  }
+  position: relative;
 
   @media (min-width: 960px) {
     display: none;
+  }
+
+  &--close {
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -100px;
+
+      width: 36px;
+      height: 2px;
+
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: #d22856;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  &--open {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -60px;
+
+      width: 36px;
+      height: 2px;
+
+      background-color: #ffffff;
+      box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: #d22856;
+      box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(210, 40, 86, 0.3);
+      box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3);
+    }
   }
 }
