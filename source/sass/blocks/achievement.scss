@@ -102,6 +102,7 @@
 }
 
 .achievement__check + span {
+  //переделать без спанов
   position: absolute;
   content: "";
   left: 0;
@@ -124,13 +125,16 @@
   }
 }
 
-.achievement__check + span:hover {
+.achievement__check:hover + span {
   border: 1px solid #000000;
+
 }
 
-.achievement__check + span:focus {
+
+.achievement__check:focus + span, // если поставить фокус к ховеру странные вещи творятся
+.achievement__check:active + span {
   border: 1px solid #d22856;
-  outline: none;
+  outline: none;   //не срабатывает
 }
 
 .achievement__check:checked + span {

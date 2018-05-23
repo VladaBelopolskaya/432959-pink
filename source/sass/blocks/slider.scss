@@ -38,7 +38,7 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  &:hover,
+  &:hover, //почему не работает?
   &:focus {
     background-color: #7e868f;
   }

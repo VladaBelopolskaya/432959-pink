@@ -85,13 +85,14 @@
   }
 }
 
-.platform__radio + span:hover {
+.platform__radio:hover + span {
   border: 1px solid #000000;
 }
 
-.platform__radio + span:focus {
-  border: 1px solid #d22856;
-  outline: none;
+.platform__radio:focus + span,
+.platform__radio:active + span {
+  border: 1px solid #d22856; //не срабатывает
+  outline: none; //не срабатывает
 }
 
 .platform__radio:checked + span {
