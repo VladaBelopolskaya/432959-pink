@@ -107,10 +107,11 @@
 }
 
 .page-footer__text {
+  padding-right: 20px;
+
   @media (min-width: 660px) {
     font-size: 14px;
     line-height: 18px;
-    padding-right: 20px;
   }
 
   @media (min-width: 960px) {
@@ -121,6 +122,8 @@
 .page-footer__logo {
   margin-bottom: 42px;
   width: 155px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: 660px) {
     margin-bottom: 0;
