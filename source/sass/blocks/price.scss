@@ -4,11 +4,11 @@
   position: relative;
 
   @media (min-width: 660px) {
-   padding-bottom: 66px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: 960px) {
-   padding-top: 120px;
+    padding-top: 120px;
     padding-bottom: 95px;
   }
 
@@ -26,6 +26,10 @@
 
 .price__list {
   border-collapse: collapse;
+  overflow: hidden; // как избавиться от скролла?
+  width: 100%;
+  position: relative; // как сделать видимой среднюю часть?
+  left: -260px; //
 
   @media (min-width: 660px) {
     width: 620px;
@@ -66,7 +70,10 @@
   line-height: 30px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 24px 90px;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-bottom: 24px;
+  padding-top: 15px;
   width: 280px;
 
   @media (min-width: 660px) {
@@ -95,6 +102,20 @@
       display: none;
     }
   }
+}
+
+.price__name:nth-child(3):before {
+  position: absolute;
+  content: "Хит";
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  transform-origin: 0 0;
+  transform: rotate(-30deg);
+  background-image: url(../../img/bg-hit.svg);
+  width: 72px;
+  height: 72px;
 }
 
 .price__tariff {
@@ -155,9 +176,11 @@
 
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding-left: 18px;
+  padding-top: 18px;
   padding-bottom: 24px;
+  width: 280px;
+  font-size: 14px;
 
   @media (min-width: 660px) {
     width: 155px;
@@ -173,5 +196,46 @@
 
   @media (min-width: 660px) {
     display: none;
+  }
+}
+
+.price__access {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 33px; //галочка не становится больше
+    height: 33px;
+
+    left: 0; //как их нормально подвинуть? хотела сделать родителя блоком, но он тоже почему то не двигается в конец строки таблицы
+    top: -5px;
+
+    @media (min-width: 660px) {
+      left: 60px;
+      top: 6px;
+    }
+
+    @media (min-width: 960px) {
+      left: 102px;
+      top: 15px;
+
+    }
+  }
+
+  &--yes {
+    &::after {
+      background-image: url("../../img/icon-yes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--no {
+    &::after {
+      background-image: url("../../img/icon-no.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }

@@ -18,6 +18,7 @@
               <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
               <img src="img/logo-pink-white-mobile.svg" width="155" height="44" alt="pink">
+              <!-- Как потом поменять размер лого? на маобильной версии она меньше чем на остальных -->
             </picture>
           </a>
           <button class="page-header__button" type="button">Меню</button>
@@ -42,7 +43,7 @@
     </div>
     <section class="download">
       <p class="download__title">Взгляните на жизнь иначе!</p>
-        <a href="https://www.apple.com/itunes/" class="download__button">Скачать приложение</a>
+      <a href="https://www.apple.com/itunes/" class="download__button">Скачать приложение</a>
       <div class="download__platform">
         <a class="download__img download__img--ios" href="https://www.apple.com/itunes/">iOS</a>
         <a class="download__img download__img--android" href="https://play.google.com/store">Android</a>
@@ -90,6 +91,10 @@
         <button type="button" class="slider__button">2</button>
         <button type="button" class="slider__button">3</button>
       </div>
+      <div class="reviews__buttons">
+        <button type="button" class="reviews__button reviews__button--left">Назад</button>
+        <button type="button" class="reviews__button reviews__button--right">Вперед</button>
+      </div>
     </section>
     <section class="price">
       <table class="price__list">
@@ -112,12 +117,21 @@
           </td>
           <td class="price__available">
             <span class="price__comment">Розовый фильтр</span>
+            <span class="price__access price__access--yes">
+              <p class="visually-hidden">Да</p>
+            </span>
           </td>
           <td class="price__available">
             <span class="price__comment">Розовый фильтр</span>
+            <span class="price__access price__access--yes">
+              <p class="visually-hidden">Да</p>
+            </span>
           </td>
           <td class="price__available">
             <span class="price__comment">Розовый фильтр</span>
+            <span class="price__access price__access--yes">
+              <p class="visually-hidden">Да</p>
+            </span>
           </td>
         </tr>
         <tr class="price__line">
@@ -126,12 +140,21 @@
           </td>
           <td class="price__available">
             <span class="price__comment">Смайлики</span>
+            <span class="price__access price__access--no">
+              <p class="visually-hidden">Нет</p>
+            </span>
           </td>
           <td class="price__available">
             <span class="price__comment">Смайлики</span>
+            <span class="price__access price__access--yes">
+              <p class="visually-hidden">Да</p>
+            </span>
           </td>
           <td class="price__available">
             <span class="price__comment">Смайлики</span>
+            <span class="price__access price__access--yes">
+              <p class="visually-hidden">Да</p>
+            </span>
           </td>
         </tr>
         <tr class="price__line">
@@ -140,12 +163,21 @@
           </td>
           <td class="price__available">
             <span class="price__comment">Комментарии</span>
+            <span class="price__access price__access--no">
+              <p class="visually-hidden">Нет</p>
+            </span>
           </td>
           <td class="price__available">
             <span class="price__comment">Комментарии</span>
+            <span class="price__access price__access--no">
+              <p class="visually-hidden">Нет</p>
+            </span>
           </td>
           <td class="price__available">
             <span class="price__comment">Комментарии</span>
+            <span class="price__access price__access--yes">
+              <p class="visually-hidden">Да</p>
+            </span>
           </td>
         </tr>
       </table>

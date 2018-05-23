@@ -32,6 +32,11 @@
     left: 10px;
     top: 55px;
     background-repeat: no-repeat;
+
+    @media (min-width: 960px) {
+      width: 310px;
+      height: 350px;
+    }
   }
 
   @media (min-width: 960px) {
@@ -39,6 +44,42 @@
     padding-top: 112px;
     padding-bottom: 115px;
     padding-left: 365px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/icon-timer.svg");
+      width: 242px; //не уменьшает
+      height: 277px; //не уменьшает
+      left: 0;
+      top: 20px;
+      background-repeat: no-repeat;
+
+      @media (min-width: 960px) {
+        width: 300px;
+        height: 350px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "24";
+      font-size: 120px;
+      font-weight: 700;
+      text-align: center; //как цифру посередине сделать?
+      color: #d22856;
+      background-image: url("../../img/icon-editor-diagram-fill.svg");
+      width: 240px;
+      height: 276px;
+      left: 25px;
+      top: 90px;
+      background-repeat: no-repeat;
+
+      @media (min-width: 960px) {
+        width: 256px;
+        height: 256px;
+      }
+    }
   }
 }
 
