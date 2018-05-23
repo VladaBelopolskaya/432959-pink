@@ -21,8 +21,7 @@
 
   @media (min-width: 660px) {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-position: bottom; //как подвинуть фоновое изображение ?
-
+    background-position: bottom;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../../img/bg-back-tablet@2x.jpg");
     }
@@ -52,14 +51,26 @@
     }
 
     @media (min-width: 660px) {
-      height: 550px; //почему она так криво обрезалась?
-      width: 470px;
+      height: 545px;
+      width: 100%;
       background-image: url("../../img/iphone-hand-tablet@1x.png");
-      left: 0;
+      left: -20px;
       bottom: 0;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../../img/iphone-hand-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: 960px) {
+      height: 645px;
+      width: 1050px;
+      background-image: url("../../img/iphone-hand-desktop@1x.png");
+      left: 45px;
+      bottom: 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../../img/iphone-hand-desktop@2x.jpg");
       }
     }
   }
@@ -94,7 +105,7 @@
   background-color: transparent;
 
   @media (min-width: 660px) {
-    padding-bottom: 38px;
+    padding-bottom: 30px;
     padding-top: 25px;
     padding-left: 20px;
     padding-right: 20px;
@@ -177,34 +188,76 @@
   border: 0;
   padding: 0;
   font-size: 0;
-  width: 30px;
-  height: 30px;
-  background-image: url("../../img/icon-no.svg"); //как менять цвет? другие свг вставлять?
-  background-repeat: no-repeat;
-  background-color: transparent;
-  margin-top: auto;
-  margin-right: 20px;
-
-  @media (min-width: 660px) {
-    margin-right: 0;
-  }
+  position: relative;
 
   @media (min-width: 960px) {
     display: none;
   }
-}
 
-.page-header__logo {
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 30px; //иконку текстом вставлять?
+  &--close {
+    &::before,
+    &::after {
+      content: "";
 
-  @media (min-width: 660px) {
-    background-image: url("../../img/logo-pink-white-tablet.svg"); //как менять цвет? другие свг вставлять?
-    height: 45px;
+      position: absolute;
+      top: 0;
+      left: -100px;
+
+      width: 36px;
+      height: 2px;
+
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: #d22856;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(210, 40, 86, 0.3);
+    }
   }
 
-  @media (min-width: 960px) {
-    background-image: url("../../img/logo-pink-white-desktop.svg");
+  &--open {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -60px;
+
+      width: 36px;
+      height: 2px;
+
+      background-color: #ffffff;
+      box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: #d22856;
+      box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(210, 40, 86, 0.3);
+      box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3);
+    }
   }
 }

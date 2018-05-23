@@ -6,55 +6,118 @@
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #f2f2f2; //откуда взялась белая полоса между блоками?
+    background-color: #ffffff;
+  }
+
+  @media (min-width: 960px) {
+    background-color: #f2f2f2;
   }
 }
 
 .effect__help {
+  box-sizing: border-box;
+  width: 620px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 320px;
-  width: 310px;
+  padding-top: 95px;
+  padding-left: 310px;
   position: relative;
 
-  ::after { //я псевдо элемент ставлю этому классу, а он добавляется дочерним элементам. как так?
+  &::before {
     position: absolute;
     content: "";
     background-image: url("../../img/icon-timer.svg");
-    width: 310px;
-    height: 350px;
-    left: 0;
+    width: 240px;
+    height: 276px;
+    left: 10px;
+    top: 55px;
     background-repeat: no-repeat;
+
+    @media (min-width: 960px) {
+      width: 310px;
+      height: 350px;
+    }
   }
 
   @media (min-width: 960px) {
-    width: 530px;
-    padding-top: 88px;
+    width: 940px;
+    padding-top: 112px;
     padding-bottom: 115px;
+    padding-left: 365px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/icon-timer.svg");
+      width: 242px; //не уменьшает
+      height: 277px; //не уменьшает
+      left: 0;
+      top: 20px;
+      background-repeat: no-repeat;
+
+      @media (min-width: 960px) {
+        width: 300px;
+        height: 350px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "24";
+      font-size: 120px;
+      font-weight: 700;
+      text-align: center; //как цифру посередине сделать?
+      color: #d22856;
+      background-image: url("../../img/icon-editor-diagram-fill.svg");
+      width: 240px;
+      height: 276px;
+      left: 25px;
+      top: 90px;
+      background-repeat: no-repeat;
+
+      @media (min-width: 960px) {
+        width: 256px;
+        height: 256px;
+      }
+    }
   }
 }
 
 .effect__title {
-  width: 170px;
+  width: 168px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
 
   @media (min-width: 960px) {
     width: 310px;
-    font-size: 30px;
     line-height: 30px;
   }
 }
 
 .effect__text {
+  width: 296px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
   @media (min-width: 960px) {
     font-size: 18px;
     line-height: 30px;
-    padding-bottom: 12px;
+    margin-bottom: 35px;
+    width: 530px;
+    margin-top: 22px;
   }
 }
 
 .effect__link {
   color: #d22856;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   text-decoration: underline;
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

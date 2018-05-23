@@ -38,11 +38,14 @@
       margin-right: auto;
       width: 660px;
       display: flex;
-      padding-top: 40px;
+      padding-top: 35px;
     }
 
     @media (min-width: 960px) {
       width: 960px;
+      padding-top: 72px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
@@ -104,27 +107,25 @@
 }
 
 .page-footer__text {
+  padding-right: 20px;
+
   @media (min-width: 660px) {
     font-size: 14px;
     line-height: 18px;
-    padding-right: 20px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 18px;
   }
 }
 
 .page-footer__logo {
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 45px;
+  margin-bottom: 42px;
+  width: 155px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 42px;
 
   @media (min-width: 660px) {
-    background-image: url("../../img/logo-pink-white-tablet.svg"); //как менять цвет? другие свг вставлять?
-    margin: 0;
-  }
-
-  @media (min-width: 960px) {
-    background-image: url("../../img/logo-pink-white-desktop.svg");
+    margin-bottom: 0;
   }
 }

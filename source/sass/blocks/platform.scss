@@ -85,10 +85,12 @@
   }
 }
 
-.platform__radio + span:hover {
+.platform__radio:hover + span,
+.platform__radio:focus + span {
   border: 1px solid #000000;
 }
 
+.platform__radio:active + span,
 .platform__radio + span:focus {
   border: 1px solid #d22856;
   outline: none;

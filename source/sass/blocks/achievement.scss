@@ -102,6 +102,7 @@
 }
 
 .achievement__check + span {
+  //переделать без спанов
   position: absolute;
   content: "";
   left: 0;
@@ -124,17 +125,19 @@
   }
 }
 
-.achievement__check + span:hover {
+.achievement__check:hover + span, .achievement__check:focus + span{
   border: 1px solid #000000;
+
 }
 
+.achievement__check:active + span,
 .achievement__check + span:focus {
   border: 1px solid #d22856;
   outline: none;
 }
 
 .achievement__check:checked + span {
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("../../img/icon-yes.svg"); //как поменять цвет?
   background-repeat: no-repeat;
   background-position: center;
 }

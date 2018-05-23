@@ -3,8 +3,13 @@
   padding-top: 66px;
   position: relative;
 
+  @media (min-width: 660px) {
+    padding-bottom: 66px;
+  }
+
   @media (min-width: 960px) {
-    padding-top: 140px;
+    padding-top: 120px;
+    padding-bottom: 95px;
   }
 
   &::before {
@@ -20,11 +25,19 @@
 }
 
 .price__list {
+  border-collapse: collapse;
+  overflow: hidden; // как избавиться от скролла?
+  width: 100%;
+  position: relative; // как сделать видимой среднюю часть?
+  left: -260px; //
+
   @media (min-width: 660px) {
     width: 620px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 70px;
+    padding-top: 20px;
+    margin-top: 22px;
   }
 
   @media (min-width: 960px) {
@@ -35,10 +48,21 @@
 
 .price__label {
   display: flex;
+
+  @media (min-width: 660px) {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
 }
 
 .price__name {
   box-sizing: border-box;
+  border: 1px solid #e7e7e7;
   display: block;
   background-color: #283645;
   color: #ffffff;
@@ -46,30 +70,52 @@
   line-height: 30px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 24px 90px;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-bottom: 24px;
+  padding-top: 15px;
   width: 280px;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    width: 155px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 24px;
+    width: 235px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
 
   &--empty {
     background-color: #f2f2f2;
+    border: none;
 
     @media (max-width: 659px) {
       display: none;
     }
   }
+}
 
-  @media (min-width: 660px) {
-    font-size: 14px;
-    width: 155px; //почему не получается сделать фикс ширину?
-    padding-top: 20px;
-    padding-bottom: 15px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  @media (min-width: 960px) {
-    width: 235px;
-    padding: 24px 65px;
-  }
+.price__name:nth-child(3):before {
+  position: absolute;
+  content: "Хит";
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  transform-origin: 0 0;
+  transform: rotate(-30deg);
+  background-image: url(../../img/bg-hit.svg);
+  width: 72px;
+  height: 72px;
 }
 
 .price__tariff {
@@ -89,6 +135,16 @@
 .price__line {
   background-color: #ffffff;
   display: flex;
+
+  @media (min-width: 660px) {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
 }
 
 .price__field {
@@ -97,19 +153,21 @@
   }
 
   @media (min-width: 660px) {
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
     line-height: 30px;
     font-size: 14px;
     padding-left: 15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     width: 155px;
   }
 
   @media (min-width: 960px) {
     font-size: 18px;
     padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-top: 14px;
     width: 235px;
   }
 }
@@ -117,10 +175,12 @@
 .price__available {
 
   box-sizing: border-box;
-  border: 1px solid black;
-  padding-left: 20px;
-  padding-top: 20px;
+  border: 1px solid #e7e7e7;
+  padding-left: 18px;
+  padding-top: 18px;
   padding-bottom: 24px;
+  width: 280px;
+  font-size: 14px;
 
   @media (min-width: 660px) {
     width: 155px;
@@ -136,5 +196,46 @@
 
   @media (min-width: 660px) {
     display: none;
+  }
+}
+
+.price__access {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 33px; //галочка не становится больше
+    height: 33px;
+
+    left: 0; //как их нормально подвинуть? хотела сделать родителя блоком, но он тоже почему то не двигается в конец строки таблицы
+    top: -5px;
+
+    @media (min-width: 660px) {
+      left: 60px;
+      top: 6px;
+    }
+
+    @media (min-width: 960px) {
+      left: 102px;
+      top: 15px;
+
+    }
+  }
+
+  &--yes {
+    &::after {
+      background-image: url("../../img/icon-yes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--no {
+    &::after {
+      background-image: url("../../img/icon-no.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
