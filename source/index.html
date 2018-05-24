@@ -17,14 +17,10 @@
             <picture>
               <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" width="155" height="44" alt="pink">
-              <!-- Как потом поменять размер лого? на маобильной версии она меньше чем на остальных -->
+              <img src="img/logo-pink-white-mobile.svg" width="78" height="24" alt="pink">
             </picture>
           </a>
-          <div>
-            <button class="page-header__button page-header__button--open" type="button">Открыть меню</button>
-            <button class="page-header__button page-header__button--close" type="button">Закрыть меню</button>
-          </div>
+          <button class="page-header__button" type="button">Меню</button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -59,8 +55,8 @@
     <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
     <section class="advantages">
       <h2 class="visually-hidden">Приемущества</h2>
-      <p class="advantages__text advantages__text--first">Устали от серости мегаполиса?</p>
       <div class="advantages__help-text">
+        <p class="advantages__text advantages__text--first">Устали от серости мегаполиса?</p>
         <p class="advantages__text advantages__text--second">Нам есть, что вам предложить!</p>
       </div>
       <div class="advantages__help">
@@ -100,90 +96,92 @@
       </div>
     </section>
     <section class="price">
-      <table class="price__list">
-        <tr class="price__label">
-          <th class="price__name price__name--empty">
-          </th>
-          <th class="price__name">
-            <span class="price__tariff">База</span> 1,99&nbsp;usd
-          </th>
-          <th class="price__name">
-            <span class="price__tariff">Стандарт</span> 3,99&nbsp;usd
-          </th>
-          <th class="price__name">
-            <span class="price__tariff">Анлим</span> 9,99&nbsp;usd
-          </th>
-        </tr>
-        <tr class="price__line">
-          <td class="price__field">
-            Розовый фильтр
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Розовый фильтр</span>
-            <span class="price__access price__access--yes">
-              <p class="visually-hidden">Да</p>
-            </span>
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Розовый фильтр</span>
-            <span class="price__access price__access--yes">
-              <p class="visually-hidden">Да</p>
-            </span>
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Розовый фильтр</span>
-            <span class="price__access price__access--yes">
-              <p class="visually-hidden">Да</p>
-            </span>
-          </td>
-        </tr>
-        <tr class="price__line">
-          <td class="price__field">
-            Смайлики
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Смайлики</span>
-            <span class="price__access price__access--no">
-              <p class="visually-hidden">Нет</p>
-            </span>
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Смайлики</span>
-            <span class="price__access price__access--yes">
-              <p class="visually-hidden">Да</p>
-            </span>
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Смайлики</span>
-            <span class="price__access price__access--yes">
-              <p class="visually-hidden">Да</p>
-            </span>
-          </td>
-        </tr>
-        <tr class="price__line">
-          <td class="price__field">
-            Комментарии
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Комментарии</span>
-            <span class="price__access price__access--no">
-              <p class="visually-hidden">Нет</p>
-            </span>
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Комментарии</span>
-            <span class="price__access price__access--no">
-              <p class="visually-hidden">Нет</p>
-            </span>
-          </td>
-          <td class="price__available">
-            <span class="price__comment">Комментарии</span>
-            <span class="price__access price__access--yes">
-              <p class="visually-hidden">Да</p>
-            </span>
-          </td>
-        </tr>
-      </table>
+      <div class="price__wrapper">
+        <table class="price__list">
+          <tr class="price__label">
+            <th class="price__name price__name--empty">
+            </th>
+            <th class="price__name">
+              <span class="price__tariff">База</span> 1,99&nbsp;usd
+            </th>
+            <th class="price__name">
+              <span class="price__tariff">Стандарт</span> 3,99&nbsp;usd
+            </th>
+            <th class="price__name">
+              <span class="price__tariff">Анлим</span> 9,99&nbsp;usd
+            </th>
+          </tr>
+          <tr class="price__line">
+            <td class="price__field">
+              Розовый фильтр
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Розовый фильтр</span>
+              <span class="price__access price__access--yes">
+              <span class="visually-hidden">Да</span>
+              </span>
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Розовый фильтр</span>
+              <span class="price__access price__access--yes">
+              <span class="visually-hidden">Да</span>
+              </span>
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Розовый фильтр</span>
+              <span class="price__access price__access--yes">
+              <span class="visually-hidden">Да</span>
+              </span>
+            </td>
+          </tr>
+          <tr class="price__line">
+            <td class="price__field">
+              Смайлики
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Смайлики</span>
+              <span class="price__access price__access--no">
+              <span class="visually-hidden">Нет</span>
+              </span>
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Смайлики</span>
+              <span class="price__access price__access--yes">
+              <span class="visually-hidden">Да</span>
+              </span>
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Смайлики</span>
+              <span class="price__access price__access--yes">
+              <span class="visually-hidden">Да</span>
+              </span>
+            </td>
+          </tr>
+          <tr class="price__line">
+            <td class="price__field">
+              Комментарии
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Комментарии</span>
+              <span class="price__access price__access--no">
+              <span class="visually-hidden">Нет</span>
+              </span>
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Комментарии</span>
+              <span class="price__access price__access--no">
+              <span class="visually-hidden">Нет</span>
+              </span>
+            </td>
+            <td class="price__available">
+              <span class="price__comment">Комментарии</span>
+              <span class="price__access price__access--yes">
+              <span class="visually-hidden">Да</span>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </div>
       <div class="slider slider--price">
         <button type="button" class="slider__button">1</button>
         <button type="button" class="slider__button slider__button--active">2</button>

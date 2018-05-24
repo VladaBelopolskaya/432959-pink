@@ -28,7 +28,7 @@
   text-align: center;
   text-transform: uppercase;
   width: 222px;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
 
   @media (min-width: 660px) {
     line-height: 30px;
@@ -125,9 +125,9 @@
   }
 }
 
-.achievement__check:hover + span, .achievement__check:focus + span{
+.achievement__check:hover + span,
+.achievement__check:focus + span {
   border: 1px solid #000000;
-
 }
 
 .achievement__check:active + span,
@@ -137,7 +137,7 @@
 }
 
 .achievement__check:checked + span {
-  background-image: url("../../img/icon-yes.svg"); //как поменять цвет?
+  background-image: url("../../img/icon-yes-achiv.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

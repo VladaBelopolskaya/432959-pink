@@ -22,6 +22,7 @@
   @media (min-width: 660px) {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-position: bottom;
+
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../../img/bg-back-tablet@2x.jpg");
     }
@@ -37,6 +38,7 @@
   }
 
   &--index::before {
+    //ничего что рука не двигается адаптивно? или ее привязать к чему-нибудь другому?
     content: "";
     position: absolute;
     background-repeat: no-repeat;
@@ -44,7 +46,7 @@
     height: 286px;
     width: 320px;
     left: 0;
-    bottom: 272px;
+    bottom: 268px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../../img/iphone-hand-mobile@2x.jpg");
@@ -98,11 +100,14 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
-  padding-top: 18px;
+  padding-top: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
 
   background-color: transparent;
+
 
   @media (min-width: 660px) {
     padding-bottom: 30px;
@@ -128,6 +133,13 @@
 
   @media (min-width: 960px) {
     display: block;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: 660px) {
+    width: 155px;
+    height: 44px; //не увиличивается
   }
 }
 
@@ -185,10 +197,11 @@
 }
 
 .page-header__button {
+  position: relative;
   border: 0;
   padding: 0;
+  line-height: 0;
   font-size: 0;
-  position: relative;
 
   @media (min-width: 960px) {
     display: none;
@@ -200,11 +213,11 @@
       content: "";
 
       position: absolute;
-      top: 0;
-      left: -100px;
+      top: 10px;
+      right: -2px;
 
-      width: 36px;
-      height: 2px;
+      width: 32px;
+      height: 4px;
 
       background-color: #ffffff;
     }
@@ -236,8 +249,8 @@
       content: "";
 
       position: absolute;
-      top: 0;
-      left: -60px;
+      top: 5px;
+      right: -2px;
 
       width: 36px;
       height: 2px;

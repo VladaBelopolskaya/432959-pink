@@ -49,8 +49,6 @@
   }
 }
 
-//почему на ширине больше 660 перестают работать все ссылки?
-
 .download__button {
   display: block;
   box-sizing: border-box;
@@ -135,7 +133,7 @@
   }
 
   @media (min-width: 960px) {
-    margin-top: 55px;
+    margin-top: 60px;
     margin-left: 10px;
   }
 }
