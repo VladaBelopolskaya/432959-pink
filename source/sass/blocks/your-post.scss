@@ -44,11 +44,11 @@
 .your-post__setting {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; //почему не работает?
 
   @media (min-width: 660px) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 276px;
   }
 
@@ -66,7 +66,9 @@
   margin-right: auto;
 
   @media (min-width: 660px) {
-    flex-direction: column; //из-за чего высота такая большая?
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 38px;
     margin: 0;
   }
@@ -102,6 +104,16 @@
     & svg {
       width: 23px;
       height: 23px;
+    }
+
+    &--fill {
+      margin-top: 28px;
+      padding-bottom: 45px;
+    }
+
+    &--exposure {
+      margin-top: 28px;
+      padding-bottom: 42px;
     }
   }
 }

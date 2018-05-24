@@ -2,14 +2,12 @@
   position: relative;
   height: 202px;
   overflow: hidden;
+  width: 100%;
 
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
 
   @media (min-width: 660px) {
     height: 375px;
-    width: 100%; //мргины не срабатывают тогда
+    width: 100%;
   }
 
   @media (min-width: 960px) {
@@ -25,11 +23,15 @@
     width: 100%;
     background-size: 100%;
     height: 100%;
+    z-index: 3;
   }
 }
 
 .map__image {
   margin-top: -440px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
   @media (min-width: 660px) {
     margin-top: -340px;
@@ -37,5 +39,23 @@
 
   @media (min-width: 960px) {
     margin-top: -280px;
+  }
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @media (min-width: 660px) {
+    width: 700px;
+    height: 376px;
+  }
+
+  @media (min-width: 960px) {
+    width: 1200px;
+    height: 502px;
   }
 }

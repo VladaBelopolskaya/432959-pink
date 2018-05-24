@@ -144,7 +144,7 @@
     margin-right: auto;
 
     @media (min-width: 660px) {
-      width: 620px;
+      width: 620px; //в какой то момент все сломалось почему то.  не понятно как их высота распределяется
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -213,7 +213,8 @@
     left: 0;
 
     @media (min-width: 660px) {
-      right: 0; //что бы иконка поменяла положение надо заташь ширину явно? а не 100% ?
+      right: 0;
+      left: auto;//что бы иконка поменяла положение надо заташь ширину явно? а не 100% ?
     }
   }
 
