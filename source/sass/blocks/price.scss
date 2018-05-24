@@ -116,7 +116,7 @@
   }
 }
 
-.price__name:nth-child(3):after {
+.price__name:nth-child(3)::after {
   position: absolute;
   content: "Хит";
   text-transform: uppercase;
@@ -140,7 +140,7 @@
   }
 }
 
-.price__name:nth-child(3):before {
+.price__name:nth-child(3)::before {
   position: absolute;
   content: "";
   background-image: url("../../img/bg-hit.svg");

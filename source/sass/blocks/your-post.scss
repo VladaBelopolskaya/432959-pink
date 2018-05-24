@@ -3,7 +3,7 @@
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 24px;
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -48,7 +48,7 @@
   @media (min-width: 660px) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 276px;
   }
 
@@ -64,20 +64,24 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 38px;
 
   @media (min-width: 660px) {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 38px;
+    width: 26px;
     margin: 0;
+  }
+
+  @media (min-width: 960px) {
+    width: 48px;
   }
 }
 
 .your-post__icon {
   margin: 0;
   padding: 0;
-  margin-top: 38px;
   width: 48px;
   height: 48px;
   font-size: 0;
@@ -94,35 +98,49 @@
     fill: #d22856;
   }
 
+  &--active {
+    fill: #d22856;
+  }
+
   @media (min-width: 660px) {
     width: 23px;
     height: 23px;
     margin-top: 10px;
-    padding-bottom: 46px;
-    padding-right: 38px;
 
     & svg {
-      width: 23px;
-      height: 23px;
+      width: 26px;
+      height: 26px; //размер кругляшка не меняется
+      fill: #d22856;
     }
 
     &--fill {
-      margin-top: 28px;
-      padding-bottom: 45px;
+      margin-top: 50px;
     }
 
     &--exposure {
-      margin-top: 28px;
-      padding-bottom: 42px;
+      margin-top: 45px;
     }
+  }
+}
+
+@media (min-width: 960px) {
+  & svg {
+    width: 48px;
+    height: 48px; //размер не меняется
   }
 }
 
 .your-post__button-help {
   display: flex;
   flex-direction: column;
+  margin-top: 38px;
+
+  @media (min-width: 660px) {
+    margin-top: 43px;
+  }
 
   @media (min-width: 960px) {
+    width: 412px;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 6px;
@@ -132,7 +150,7 @@
 .your-post__button {
   width: 280px;
   font-weight: 700;
-  box-sizing: border-box;
+  box-sizing: border-box; // почему не срабатывает?
   text-align: center;
   border-radius: 40px;
   padding-top: 14px;
@@ -180,7 +198,7 @@
     }
 
     @media (min-width: 660px) {
-      margin-top: 25px;
+      margin-top: 28px;
     }
 
     @media (min-width: 960px) {
@@ -189,9 +207,67 @@
   }
 }
 
-.your-post__line-help {
+.your-post__slider-help {
   @media (min-width: 660px) {
-    width: 238px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: 960px) {
+    margin-left: 50px;
+  }
+}
+
+.your-post__slider {
+  margin-top: 35px;
+  padding-bottom: 22px;
+  position: relative;
+
+  @media (min-width: 660px) {
+    margin-top: 19px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 17px;
+    padding-bottom: 40px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #b5b9be;
+    bottom: 0;
+    left: -20px;
+
+    @media (min-width: 660px) {
+      bottom: 16px;
+      left: -55px;
+      width: 276px;
+    }
+
+    @media (min-width: 660px) {
+      bottom: 20px;
+      left: -93px;
+      width: 410px;
+    }
+  }
+
+  &--fill {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: block;
+    }
+  }
+
+  &--exposure {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: block;
+    }
   }
 }
 
@@ -199,27 +275,54 @@
   width: 240px;
   height: 2px;
   background-color: #283645;
-  margin-top: 35px;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: 660px) {
     width: 202px;
-    margin-top: 20px;
+  }
+
+  @media (min-width: 960px) {
+    width: 290px;
   }
 }
 
 .your-post__circle {
   box-sizing: border-box;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background-color: #f2f2f2;
   border: 2px solid #d22856;
   border-radius: 50%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  top: -30px;
-  left: 80px;
+  top: -8px;
+  left: 78px;
+}
+
+.your-post__slider--framing .your-post__circle {
+  @media (min-width: 660px) {
+    left: 54px;
+  }
+
+  @media (min-width: 960px) {
+    left: -65px;
+  }
+}
+
+.your-post__slider--fill .your-post__circle {
+  left: -68px;
+
+  @media (min-width: 960px) {
+    left: 105px;
+  }
+}
+
+.your-post__slider--exposure .your-post__circle {
+  left: 0;
+
+  @media (min-width: 960px) {
+    left: 20px;
+  }
 }
