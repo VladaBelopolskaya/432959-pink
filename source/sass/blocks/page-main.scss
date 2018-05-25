@@ -2,6 +2,25 @@
   background-color: #ffffff;
 }
 
+
+.page-main__post-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 660px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 960px) {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .page-main__text {
   font-size: 14px;
   line-height: 30px;
@@ -46,7 +65,7 @@
     }
 
     @media (min-width: 960px) {
-      padding-top: 0;
+      padding-top: 5px;
     }
   }
 

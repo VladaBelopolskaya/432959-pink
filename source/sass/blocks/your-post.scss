@@ -68,14 +68,18 @@
 
   @media (min-width: 660px) {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 26px;
-    margin: 0;
+    width: 25px;
+    margin-left: 2px;
+    margin-right: 0;
+    margin-top: 8px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: 960px) {
-    width: 48px;
+    width: 49px;
+    margin-left: 4px;
+    margin-top: 0;
+    margin-bottom: 72px;
   }
 }
 
@@ -103,31 +107,63 @@
   }
 
   @media (min-width: 660px) {
-    width: 23px;
-    height: 23px;
-    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    fill: #d22856;
 
-    & svg {
-      width: 26px;
-      height: 26px; //размер кругляшка не меняется
-      fill: #d22856;
+    &--framing svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill svg {
+      width: 25px;
+      height: 22px;
     }
 
     &--fill {
-      margin-top: 50px;
+      padding-top: 6px;
+    }
+
+    &--exposure svg {
+      width: 17px;
+      height: 17px;
     }
 
     &--exposure {
-      margin-top: 45px;
+      padding-top: 5px;
     }
   }
-}
 
-@media (min-width: 960px) {
-  & svg {
-    width: 48px;
-    height: 48px; //размер не меняется
+  @media (min-width: 960px) {
+    width: 49px;
+    height: 45px;
+
+    &--framing svg {
+      width: 45px;
+      height: 45px;
+    }
+
+    &--fill svg {
+      width: 49px;
+      height: 45px;
+    }
+
+    &--fill {
+      padding-top: 0;
+    }
+
+    &--exposure svg {
+      width: 33px;
+      height: 33px;
+    }
+
+    &--exposure {
+      padding-top: 0;
+    }
   }
+
+
 }
 
 .your-post__button-help {
@@ -136,7 +172,7 @@
   margin-top: 38px;
 
   @media (min-width: 660px) {
-    margin-top: 43px;
+    margin-top: 47px;
   }
 
   @media (min-width: 960px) {
@@ -144,24 +180,27 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 6px;
+    align-items: flex-end;
+    margin-left: 5px;
   }
 }
 
 .your-post__button {
   width: 280px;
   font-weight: 700;
-  box-sizing: border-box; // почему не срабатывает?
+  box-sizing: border-box;
   text-align: center;
   border-radius: 40px;
   padding-top: 14px;
   padding-bottom: 14px;
+  font-size: 18px;
 
   @media (min-width: 660px) {
     width: 260px;
   }
 
   @media (min-width: 960px) {
-    width: 186px;
+    width: 184px;
   }
 
   &--upload {
@@ -213,7 +252,7 @@
   }
 
   @media (min-width: 960px) {
-    margin-left: 50px;
+    margin-left: 43px;
   }
 }
 
@@ -221,16 +260,6 @@
   margin-top: 35px;
   padding-bottom: 22px;
   position: relative;
-
-  @media (min-width: 660px) {
-    margin-top: 19px;
-    padding-bottom: 38px;
-  }
-
-  @media (min-width: 960px) {
-    margin-top: 17px;
-    padding-bottom: 40px;
-  }
 
   &::after {
     position: absolute;
@@ -240,17 +269,35 @@
     background-color: #b5b9be;
     bottom: 0;
     left: -20px;
+  }
 
-    @media (min-width: 660px) {
+  @media (min-width: 660px) {
+    margin-top: 19px;
+    padding-bottom: 38px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 276px;
+      height: 1px;
+      background-color: #b5b9be;
       bottom: 16px;
       left: -55px;
-      width: 276px;
     }
+  }
 
-    @media (min-width: 660px) {
-      bottom: 20px;
-      left: -93px;
+  @media (min-width: 960px) {
+    margin-top: 17px;
+    padding-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
       width: 410px;
+      height: 1px;
+      background-color: #b5b9be;
+      bottom: 19px;
+      left: -93px;
     }
   }
 
@@ -307,7 +354,7 @@
   }
 
   @media (min-width: 960px) {
-    left: -65px;
+    left: -68px;
   }
 }
 
@@ -315,7 +362,7 @@
   left: -68px;
 
   @media (min-width: 960px) {
-    left: 105px;
+    left: 108px;
   }
 }
 
@@ -323,6 +370,6 @@
   left: 0;
 
   @media (min-width: 960px) {
-    left: 20px;
+    left: 21px;
   }
 }

@@ -65,7 +65,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-{facebook,twitter,youtube}.svg")
+  return gulp.src("source/img/icon-editor-{contrast,crop,fill}.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
