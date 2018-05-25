@@ -89,6 +89,7 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
+
 }
 
 .your-post__icon {
@@ -431,6 +432,10 @@
   margin-right: auto;
   top: -8px;
   left: 78px;
+}
+
+.your-post__circle:active {
+  background-color: #d22856;
 }
 
 .your-post__slider--framing .your-post__circle {

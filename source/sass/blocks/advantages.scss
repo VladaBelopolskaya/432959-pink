@@ -35,8 +35,8 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-left: 58px;
-  padding-right: 58px;
+  padding-left: 55px;
+  padding-right: 55px;
 
   @media (min-width: 660px) {
     font-size: 40px;
@@ -227,6 +227,7 @@
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/iphone-screen-3-desktop@2x.png");
+        background-size: cover;
       }
     }
 
