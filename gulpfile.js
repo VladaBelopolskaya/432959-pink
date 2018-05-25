@@ -93,8 +93,9 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "style",
-    "html",
     "minify",
+    "html",
+
     done
   );
 });
