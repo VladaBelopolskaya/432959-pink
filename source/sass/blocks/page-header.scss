@@ -12,11 +12,16 @@
 
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center;
+  background-position: center 260px; //как в ретине подвинуть изображение?
   background-repeat: no-repeat;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: auto 238px;
+
+    &--index {
+      background-size: auto 463px;
+    }
   }
 
   @media (min-width: 660px) {
@@ -25,6 +30,11 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: auto 438px;
+
+      &--index {
+        background-size: auto 730px;
+      }
     }
   }
 
@@ -34,6 +44,11 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: auto 394px;
+
+      &--index {
+        background-size: auto 848px;
+      }
     }
   }
 
@@ -48,7 +63,8 @@
     bottom: 268px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.jpg");
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      background-size: auto 286px;
     }
 
     @media (min-width: 660px) {
@@ -59,19 +75,23 @@
       bottom: 0;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/iphone-hand-tablet@2x.jpg");
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+        background-size: auto 548px;
       }
     }
 
     @media (min-width: 960px) {
       height: 645px;
       width: 95%;
+      max-width: 1050px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
-      left: 45px;
+      left: auto;
+      right: 10px;
       bottom: 0;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/iphone-hand-desktop@2x.jpg");
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: auto 645px;
       }
     }
   }

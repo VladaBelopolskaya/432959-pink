@@ -1,4 +1,5 @@
 .download {
+  box-sizing: border-box;
   color: #ffffff;
   background-color: #1d2631;
   padding-bottom: 30px;
@@ -13,15 +14,18 @@
     margin-top: 0;
     position: relative;
     z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 660px;
   }
 
   @media (min-width: 960px) {
     box-sizing: border-box;
     width: 960px;
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 42px;
     position: static;
+    padding-left: 0;
+    padding-top: 25px;
   }
 }
 
