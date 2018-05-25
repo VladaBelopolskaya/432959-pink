@@ -17,7 +17,7 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: auto 238px;
+    background-size: auto 463px;
 
     &--index {
       background-size: auto 463px;
@@ -30,7 +30,7 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: auto 438px;
+      background-size: auto 730px;
 
       &--index {
         background-size: auto 730px;
@@ -44,7 +44,7 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: auto 394px;
+      background-size: auto 848px;
 
       &--index {
         background-size: auto 848px;
