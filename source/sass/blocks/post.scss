@@ -5,7 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   width: 280px;
   position: relative;
 
@@ -14,11 +14,12 @@
     min-height: 455px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: 960px) {
     min-height: 555px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 
   &--day {
@@ -72,24 +73,6 @@
   }
 }
 
-.post__wrapper {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 660px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  @media (min-width: 960px) {
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .post__photo {
   width: 280px;
   height: 180px;
@@ -114,7 +97,7 @@
     }
 
     @media (min-width: 960px) {
-      width: 100%; //не помогает
+      width: 100%;
       height: 506px;
     }
   }
@@ -126,10 +109,11 @@
   padding-left: 16px;
   padding-right: 10px;
   padding-top: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   line-height: 24px;
 
   @media (min-width: 660px) {
+    box-sizing: border-box;
     padding-left: 28px;
     padding-top: 25px;
     padding-right: 28px;
@@ -148,10 +132,13 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      min-height: 122px;
+      padding-bottom: 10px;
     }
 
     @media (min-width: 960px) {
       width: 940px;
+      min-height: 98px;
     }
   }
 }
@@ -209,22 +196,25 @@
     width: 16px;
     height: 13px;
     background-repeat: no-repeat;
-    background-image: url("../../img/icon-heart.svg");
+    background-image: url("../img/icon-heart.svg");
     left: 0;
+
     @media (min-width: 660px) {
       right: 0;
+      left: auto;
     }
-
   }
 
   &--top {
     width: 125px;
     box-sizing: border-box;
+
     @media (min-width: 660px) {
       order: 2;
       padding-left: 0;
       padding-right: 20px;
       margin-top: 0;
+      padding-top: 5px;
     }
   }
 }
@@ -232,7 +222,7 @@
 .post__text {
   quotes: none;
   display: inline-block;
-  padding-bottom: 11px;
+  padding-bottom: 15px;
 
   @media (min-width: 960px) {
     padding-bottom: 15px;

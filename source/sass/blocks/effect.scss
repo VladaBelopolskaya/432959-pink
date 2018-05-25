@@ -22,43 +22,52 @@
   padding-top: 95px;
   padding-left: 310px;
   position: relative;
+  padding-bottom: 25px;
 
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../../img/icon-timer.svg");
+    background-image: url("../img/icon-timer.svg");
     width: 240px;
     height: 276px;
-    left: 10px;
+    left: 0;
     top: 55px;
+    background-size: contain;
     background-repeat: no-repeat;
+  }
 
-    @media (min-width: 960px) {
-      width: 310px;
-      height: 350px;
-    }
+  &::after {
+    position: absolute;
+    content: "24";
+    font-size: 95px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 198px;
+    color: #d22856;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    width: 202px;
+    height: 202px;
+    left: 20px;
+    top: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: 960px) {
     width: 940px;
     padding-top: 112px;
-    padding-bottom: 115px;
+    padding-bottom: 110px;
     padding-left: 365px;
 
     &::before {
       position: absolute;
       content: "";
-      background-image: url("../../img/icon-timer.svg");
-      width: 242px; //не уменьшает
-      height: 277px; //не уменьшает
+      background-image: url("../img/icon-timer.svg");
+      width: 300px;
+      height: 350px;
       left: 0;
-      top: 20px;
+      top: 15px;
       background-repeat: no-repeat;
-
-      @media (min-width: 960px) {
-        width: 300px;
-        height: 350px;
-      }
     }
 
     &::after {
@@ -66,19 +75,15 @@
       content: "24";
       font-size: 120px;
       font-weight: 700;
-      text-align: center; //как цифру посередине сделать?
+      text-align: center;
+      line-height: 240px;
       color: #d22856;
-      background-image: url("../../img/icon-editor-diagram-fill.svg");
-      width: 240px;
-      height: 276px;
-      left: 25px;
-      top: 90px;
+      background-image: url("../img/icon-editor-diagram-fill.svg");
+      width: 256px;
+      height: 256px;
+      left: 20px;
+      top: 85px;
       background-repeat: no-repeat;
-
-      @media (min-width: 960px) {
-        width: 256px;
-        height: 256px;
-      }
     }
   }
 }
@@ -101,6 +106,7 @@
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 10px;
+
   @media (min-width: 960px) {
     font-size: 18px;
     line-height: 30px;

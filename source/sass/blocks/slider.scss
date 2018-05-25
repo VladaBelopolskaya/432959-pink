@@ -28,6 +28,7 @@
 
 .slider__button {
   box-sizing: border-box;
+  border: none;
   padding: 0;
   width: 6px;
   height: 6px;
@@ -63,5 +64,4 @@
       background-color: transparent;
     }
   }
-
 }
