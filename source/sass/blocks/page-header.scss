@@ -12,10 +12,16 @@
 
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 260px; //как в ретине подвинуть изображение?
+  background-position: center 260px;
   background-repeat: no-repeat;
+  background-size: cover;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  &--index {
+    background-size: contain;
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: auto 463px;
 
@@ -51,50 +57,6 @@
       }
     }
   }
-
-  &--index::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    height: 286px;
-    width: 320px;
-    left: 0;
-    bottom: 268px;
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.png");
-      background-size: auto 286px;
-    }
-
-    @media (min-width: 660px) {
-      height: 545px;
-      width: 100%;
-      background-image: url("../img/iphone-hand-tablet@1x.png");
-      left: -20px;
-      bottom: 0;
-
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/iphone-hand-tablet@2x.png");
-        background-size: auto 548px;
-      }
-    }
-
-    @media (min-width: 960px) {
-      height: 645px;
-      width: 95%;
-      max-width: 1050px;
-      background-image: url("../img/iphone-hand-desktop@1x.png");
-      left: auto;
-      right: 10px;
-      bottom: 0;
-
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/iphone-hand-desktop@2x.png");
-        background-size: auto 645px;
-      }
-    }
-  }
 }
 
 .page-header__help-desktop {
@@ -112,6 +74,50 @@
     margin-right: auto;
     justify-content: space-between;
     background-color: transparent;
+  }
+
+  &--index::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    height: 286px;
+    width: 258px;
+    right: 19%;
+    bottom: -395px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      background-size: auto 286px;
+    }
+
+    @media (min-width: 660px) {
+      height: 545px;
+      width: 100%;
+      max-width: 700px;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      right: 3%;
+      bottom: -620px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+        background-size: auto 548px;
+      }
+    }
+
+    @media (min-width: 960px) {
+      height: 645px;
+      width: 95%;
+      max-width: 1050px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      right: 22px;
+      bottom: -745px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: auto 645px;
+      }
+    }
   }
 }
 
@@ -157,8 +163,36 @@
 
 .page-header__logo img {
   @media (min-width: 660px) {
-    width: 155px;
-    height: 44px;
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.page-header__logo {
+
+  background-image: url(../img/logo-pink-white-mobile-pink.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: 660px) {
+    background-image: url(../img/logo-pink-blue-mobile-pink.svg);
+  }
+
+  @media (min-width: 960px) {
+    background-image: url(../img/logo-pink-blue-desktop-pink.svg);
+  }
+
+  &:active {
+    background-image: none;
+  }
+
+  &:hover picture,
+  &:focus picture {
+    opacity: 0;
+  }
+
+  &:active picture {
+    opacity: 0.5;
   }
 }
 

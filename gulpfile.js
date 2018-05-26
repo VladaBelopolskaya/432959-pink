@@ -33,17 +33,12 @@ gulp.task("style", function () {
     .pipe(server.stream());
 });
 
-gulp.task("minify", function() {
-  return gulp.src("source/*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build"));
-});
-
 gulp.task("html", function () {
   return gulp.src("source/*.html")
   .pipe(posthtml([
     include()
   ]))
+  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
 });
 
@@ -93,7 +88,6 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "style",
-    "minify",
     "html",
 
     done

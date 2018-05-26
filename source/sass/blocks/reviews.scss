@@ -18,7 +18,12 @@
 
   @media (min-width: 960px) {
     padding-top: 50px;
-    padding-bottom: 5px;
+    padding-bottom: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
 
     &::before {
       position: absolute;
@@ -115,8 +120,8 @@
     display: flex;
     justify-content: space-between;
     width: 940px;
-    position: relative;
-    bottom: 160px;
+    position: absolute;
+    top: 51%;
     margin-left: auto;
     margin-right: auto;
   }

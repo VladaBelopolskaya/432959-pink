@@ -23,6 +23,7 @@
     width: 620px;
     justify-content: space-between;
     padding-top: 15px;
+    flex-wrap: wrap;
   }
 }
 
@@ -50,6 +51,8 @@
   @media (min-width: 960px) {
     padding: 0;
     border: none;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   &--active {
