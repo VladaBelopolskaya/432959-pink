@@ -170,16 +170,16 @@
 
 .page-header__logo {
 
-  background-image: url(../img/logo-pink-white-mobile-pink.svg);
+  background-image: url("../img/logo-pink-white-mobile-pink.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-width: 660px) {
-    background-image: url(../img/logo-pink-blue-mobile-pink.svg);
+    background-image: url("../img/logo-pink-blue-mobile-pink.svg");
   }
 
   @media (min-width: 960px) {
-    background-image: url(../img/logo-pink-blue-desktop-pink.svg);
+    background-image: url("../img/logo-pink-blue-desktop-pink.svg");
   }
 
   &:active {

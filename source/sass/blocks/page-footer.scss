@@ -149,7 +149,7 @@
   width: 147px;
   align-self: center;
 
-  background-image: url(../img/logo-pink-blue-mobile-pink.svg);
+  background-image: url("../img/logo-pink-blue-mobile-pink.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -158,7 +158,7 @@
   }
 
   @media (min-width: 960px) {
-    background-image: url(../img/logo-pink-blue-desktop-pink.svg);
+    background-image: url("../img/logo-pink-blue-desktop-pink.svg");
   }
 
   &:active {
