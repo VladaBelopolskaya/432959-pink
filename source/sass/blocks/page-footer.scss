@@ -144,8 +144,8 @@
 }
 
 .page-footer__logo {
-  margin-top: 10px;
-  margin-bottom: 32px;
+  margin-top: 0;
+  margin-bottom: 42px;
   width: 147px;
   align-self: center;
 
@@ -154,11 +154,11 @@
   background-size: contain;
 
   @media (min-width: 660px) {
+    align-self: flex-start;
     margin: 0;
   }
 
   @media (min-width: 960px) {
-    align-self: flex-start;
     background-image: url("../img/logo-pink-blue-desktop-pink.svg");
   }
 

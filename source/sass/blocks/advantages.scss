@@ -205,7 +205,6 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-screen-mobile@2x.png");
-      background-size: contain;
     }
 
     @media (min-width: 660px) {
@@ -228,7 +227,6 @@
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/iphone-screen-3-desktop@2x.png");
-        background-size: cover;
       }
     }
 
@@ -283,7 +281,7 @@
     padding-bottom: 316px;
 
     @media (min-width: 660px) {
-      padding-bottom: 44px;
+      padding-bottom: 40px;
       padding-right: 0;
     }
   }

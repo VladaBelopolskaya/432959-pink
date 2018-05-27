@@ -15,7 +15,6 @@
   }
 
   @media (min-width: 960px) {
-    padding-left: 35px;
     width: 440px;
     margin: 0;
     padding-bottom: 10px;
@@ -46,6 +45,10 @@
   @media (min-width: 660px) {
     padding-top: 42px;
   }
+  @media (min-width: 960px) {
+    padding-left: 35px;
+  }
+
 }
 
 .platform__item {
