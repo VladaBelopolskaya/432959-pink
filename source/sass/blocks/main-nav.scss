@@ -20,9 +20,9 @@
 
   @media (min-width: 960px) {
     display: flex;
-    width: 620px;
-    justify-content: space-between;
-    padding-top: 15px;
+    width: 700px;
+    justify-content: flex-start;
+    padding-top: 12px;
     flex-wrap: wrap;
   }
 }
@@ -51,8 +51,7 @@
   @media (min-width: 960px) {
     padding: 0;
     border: none;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 80px;
   }
 
   &--active {

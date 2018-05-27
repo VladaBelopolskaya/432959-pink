@@ -2,16 +2,17 @@
   background-color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 48px;
-  padding-bottom: 20px;
+  padding-top: 44px;
+  padding-bottom: 16px;
 
   @media (min-width: 660px) {
-    padding-top: 55px;
+    padding-top: 45px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: 960px) {
     padding-top: 70px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
 }
 
@@ -20,8 +21,11 @@
   line-height: 28px;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   text-align: center;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: 660px) {
     font-weight: 300;
@@ -29,8 +33,6 @@
     line-height: 50px;
     width: 375px;
     margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media (min-width: 960px) {
@@ -42,13 +44,15 @@
 }
 
 .connection__contacts {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
   @media (min-width: 660px) {
     display: flex;
     width: 620px;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media (min-width: 960px) {
@@ -97,7 +101,7 @@
 .connection__contact-info {
   font-weight: 200;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 28px;
   color: #d22856;
   margin: 0;
   padding: 0;
